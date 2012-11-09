@@ -1,0 +1,358 @@
+0000000000000000000000000000000000000000 9bca1994eeb66b2cb62aa54ebf188e20d47daecc israel <israel@israel-VirtualBox.(none)> 1352434584 -0600	commit (initial): clean kernel
+9bca1994eeb66b2cb62aa54ebf188e20d47daecc 3420363a90f5102e42b57d874abc36b7c962ee5f israel <israel@israel-VirtualBox.(none)> 1352434598 -0600	am: ENGR00081147 Support i.MX35 3stack board
+3420363a90f5102e42b57d874abc36b7c962ee5f 9a680d1b9eff5cdb29b8dce374d1f995ff709564 israel <israel@israel-VirtualBox.(none)> 1352434599 -0600	am: ENGR00094618 Update .gitignore configure file
+9a680d1b9eff5cdb29b8dce374d1f995ff709564 1c80b5a39157d4610f7ee9cc4183b604455557a4 israel <israel@israel-VirtualBox.(none)> 1352434599 -0600	am: ENGR00094619 Support i.MX31 3stack board
+1c80b5a39157d4610f7ee9cc4183b604455557a4 29208cc2414e8451e225707efbbef03ac7899411 israel <israel@israel-VirtualBox.(none)> 1352434599 -0600	am: ENGR00099697 Add nand driver for mx35
+29208cc2414e8451e225707efbbef03ac7899411 140d96474048ca3924193daf81a129d56eab5215 israel <israel@israel-VirtualBox.(none)> 1352434599 -0600	am: ENGR00102776 Support boot from NAND on i.mx35 3stack TO1
+140d96474048ca3924193daf81a129d56eab5215 96b4d93560c08b1cb4a96281f13cd21d4339ae33 israel <israel@israel-VirtualBox.(none)> 1352434600 -0600	am: ENGR00102788 Remove CONFIG_NAND_BOOT on i.MX31 3stack
+96b4d93560c08b1cb4a96281f13cd21d4339ae33 cbdd8d89fc1e580c88563a3f2982012a46f0c11b israel <israel@israel-VirtualBox.(none)> 1352434600 -0600	am: ENGR00103914 Support i.MX35 TO2 and 3stack board version 2
+cbdd8d89fc1e580c88563a3f2982012a46f0c11b 9e99aebc39fee4f28c8b6868fd94ecd44ce65add israel <israel@israel-VirtualBox.(none)> 1352434600 -0600	am: ENGR00104583 MX35 can not boot up kernel
+9e99aebc39fee4f28c8b6868fd94ecd44ce65add c602345dbcf56f30b0142c3bb25a9ef50a9b2dad israel <israel@israel-VirtualBox.(none)> 1352434601 -0600	am: ENGR00107886 Porting MX31, MX35 3stack to u-boot V2009.01
+c602345dbcf56f30b0142c3bb25a9ef50a9b2dad a92c7312a7a8f6b9e5bee18dee8c0a7872fb599a israel <israel@israel-VirtualBox.(none)> 1352434601 -0600	am: ENGR00108473 Porting i.MX51 3stack TO2 support to V2009.01
+a92c7312a7a8f6b9e5bee18dee8c0a7872fb599a f4c1490c6d7dc71fa46960cc19e04d5041a92d53 israel <israel@israel-VirtualBox.(none)> 1352434601 -0600	am: ENGR00108673 Add i.MX25 core to U-Boot
+f4c1490c6d7dc71fa46960cc19e04d5041a92d53 5f8253f4e060badf8dea278c69c4e20864cffae5 israel <israel@israel-VirtualBox.(none)> 1352434602 -0600	am: ENGR00107840 Add U-Boot for MX25 PDK board
+5f8253f4e060badf8dea278c69c4e20864cffae5 0cc225e394770cb0211542fa49e655f1d2c05105 israel <israel@israel-VirtualBox.(none)> 1352434602 -0600	am: ENGR00109851 Add nand driver for MX51 uboot
+0cc225e394770cb0211542fa49e655f1d2c05105 9ccc23e201eef3e00de4fe2c4a6ed43d96f30bfc israel <israel@israel-VirtualBox.(none)> 1352434603 -0600	am: ENGR00110586 MX31: Resolve Copyright issue for mx31 files
+9ccc23e201eef3e00de4fe2c4a6ed43d96f30bfc 53e1c954830350d65278c45598c9e27922ae5787 israel <israel@israel-VirtualBox.(none)> 1352434604 -0600	am: ENGR00112298 BBG2: Basic boot.
+53e1c954830350d65278c45598c9e27922ae5787 28c131f7ed70474c7045696526ff52d514532895 israel <israel@israel-VirtualBox.(none)> 1352434604 -0600	am: ENGR00112273 BBG2: MMC boot support.
+28c131f7ed70474c7045696526ff52d514532895 8e1c32279db9e38dae002188dfbf0f9189ff7223 israel <israel@israel-VirtualBox.(none)> 1352434605 -0600	am: ENGR00112845 spi nor boot and pmic support for BBG2.
+8e1c32279db9e38dae002188dfbf0f9189ff7223 11575d575b2a16a9559f17a6586039dbe47bbe42 israel <israel@israel-VirtualBox.(none)> 1352434605 -0600	am: ENGR00113148 Add build option to uboot for different media type
+11575d575b2a16a9559f17a6586039dbe47bbe42 a9d184c04c567c35edea4d4f3a75da37c449260e israel <israel@israel-VirtualBox.(none)> 1352434605 -0600	am: ENGR00113439: BBG2, enable SPI NOR and MMC in one image.
+a9d184c04c567c35edea4d4f3a75da37c449260e 9fd692386bd52f96a2993f6d2667a355ad2d6f38 israel <israel@israel-VirtualBox.(none)> 1352434605 -0600	am: ENGR00113475: Add auto-complete and platform prompt for each platform.
+9fd692386bd52f96a2993f6d2667a355ad2d6f38 5c9e53a2219b897b5932d826212fd75e971b24ef israel <israel@israel-VirtualBox.(none)> 1352434605 -0600	am: ENGR00113611: Add FEC support for BBG2.
+5c9e53a2219b897b5932d826212fd75e971b24ef 86dcc2e7c173cfb68b8d0ba49ab4f1c4a8cf2abb israel <israel@israel-VirtualBox.(none)> 1352434606 -0600	am: ENGR00111465: Remove Watchdog disable codes in MX51 uboot.
+86dcc2e7c173cfb68b8d0ba49ab4f1c4a8cf2abb e0443ae0feb61e0f56e1e0b2d18de18ad4b145c7 israel <israel@israel-VirtualBox.(none)> 1352434606 -0600	am: ENGR00114233 Add support for programming ubifs image on nand flash
+e0443ae0feb61e0f56e1e0b2d18de18ad4b145c7 c79e76a7f210643e2f4d27b7360453d93d5f58b1 israel <israel@israel-VirtualBox.(none)> 1352434606 -0600	am: ENGR00114236 Disable NAND driver interleave mode support
+c79e76a7f210643e2f4d27b7360453d93d5f58b1 ee0be25a4c5b7d5d1446bc39f928827dc96482bf israel <israel@israel-VirtualBox.(none)> 1352434606 -0600	am: ENGR00114201: Add MMC configs to mx35 3stack config file.
+ee0be25a4c5b7d5d1446bc39f928827dc96482bf 37fc34edcd5f9a2d1a36a06b9d7f4c854c67d67c israel <israel@israel-VirtualBox.(none)> 1352434606 -0600	am: ENGR00114178 Support MMC/SD boot and enable dhcp in uboot on MX25
+37fc34edcd5f9a2d1a36a06b9d7f4c854c67d67c 95fa1255ea84e16aa2f77a79825cf8fc506846e3 israel <israel@israel-VirtualBox.(none)> 1352434606 -0600	am: ENGR00114393: Support Atmel AT45DB321D SPI NOR flash.
+95fa1255ea84e16aa2f77a79825cf8fc506846e3 23e1b90ee8c5219aa4df434f2eaeb59922ab47d2 israel <israel@israel-VirtualBox.(none)> 1352434608 -0600	am: ENGR00114367: Add BABBAGE machine id, BBG2.5 rev id for rootfs init.
+23e1b90ee8c5219aa4df434f2eaeb59922ab47d2 7510ed02074a656a16f8088cff0068f6917842a6 israel <israel@israel-VirtualBox.(none)> 1352434609 -0600	am: ENGR00114746: Disable flash header for mx35 nand boot
+7510ed02074a656a16f8088cff0068f6917842a6 bdd70534515b937447af18d4f9404d3af603b783 israel <israel@israel-VirtualBox.(none)> 1352434609 -0600	am: ENGR00113941 MX233: Make UBOOT v2009.01 work on EVK board
+bdd70534515b937447af18d4f9404d3af603b783 bd1280b4efa2200d18afc50cebfd816d459b639e israel <israel@israel-VirtualBox.(none)> 1352434609 -0600	am: ENGR00115333: Enable cp command for MMC
+bd1280b4efa2200d18afc50cebfd816d459b639e 94fea7869b09d2882c5c05c1f5a19f166c136715 israel <israel@israel-VirtualBox.(none)> 1352434609 -0600	am: ENGR00115046: Add new MMC config option for mx35.
+94fea7869b09d2882c5c05c1f5a19f166c136715 8a9c8cec788ce42ef612164a59d4433ea9664639 israel <israel@israel-VirtualBox.(none)> 1352434609 -0600	am: ENGR00115592: Replace whitespaces with tabs in Makefile
+8a9c8cec788ce42ef612164a59d4433ea9664639 d97ffa920c0a5db579b5ece42bd39dcae72e1760 israel <israel@israel-VirtualBox.(none)> 1352434611 -0600	am: ENGR00116140 MX51 3stack low level does not set M4IF correctly
+d97ffa920c0a5db579b5ece42bd39dcae72e1760 915488cfc6e6e3fe356f15721f4aa22a11128112 israel <israel@israel-VirtualBox.(none)> 1352434611 -0600	am: ENGR00116083: Recovery mode support for Android on mx51.
+915488cfc6e6e3fe356f15721f4aa22a11128112 bfb6cf9d6462e043d30c6231e46d2be5d2bccf96 israel <israel@israel-VirtualBox.(none)> 1352434611 -0600	am: ENGR00116203: Change nand Makefile to use CONFIG_MXC_NAND.
+bfb6cf9d6462e043d30c6231e46d2be5d2bccf96 4652ccac7af210cf2ce475a91c391f19247331a4 israel <israel@israel-VirtualBox.(none)> 1352434611 -0600	am: ENGR00116243: I2C support for mx51 3ds board.
+4652ccac7af210cf2ce475a91c391f19247331a4 b904b6d209c0eba302adf858a32b2d10331122de israel <israel@israel-VirtualBox.(none)> 1352434611 -0600	am: ENGR00116472-1 U-BOOT upgrade to V2009.08
+b904b6d209c0eba302adf858a32b2d10331122de 97920fec18b449a73a972b90c81c3737960563c3 israel <israel@israel-VirtualBox.(none)> 1352434612 -0600	am: u-boot v2009.08 sd/mmc support.
+97920fec18b449a73a972b90c81c3737960563c3 0d9d2ec98fd3c5feb88bbdd90b00b8a0098cea28 israel <israel@israel-VirtualBox.(none)> 1352434612 -0600	am: ENGR00116504-1: Sync clock and l2cc code with redboot.
+0d9d2ec98fd3c5feb88bbdd90b00b8a0098cea28 6c483871542faa6f3f0c02d064a5bbc41821652d israel <israel@israel-VirtualBox.(none)> 1352434612 -0600	am: ENGR00116504-2: Add mx51 bbg to3 support.
+6c483871542faa6f3f0c02d064a5bbc41821652d a646dba3bf8eafc25eb606195183f0031b63bfff israel <israel@israel-VirtualBox.(none)> 1352434612 -0600	am: ENGR00116924 Uboot: Boot up hang at detecting NAND when cold boot
+a646dba3bf8eafc25eb606195183f0031b63bfff 59ccea86cf1270515bda95e75f395264ac003095 israel <israel@israel-VirtualBox.(none)> 1352434613 -0600	am: ENGR00117616: PATA support in u-boot.
+59ccea86cf1270515bda95e75f395264ac003095 7774c6f02bcd3c0d487a4baa1b9bfaa2f7a882d4 israel <israel@israel-VirtualBox.(none)> 1352434613 -0600	am: ENGR00116772 Workaround for ARM errata ID #468414
+7774c6f02bcd3c0d487a4baa1b9bfaa2f7a882d4 f580ecd000ca968376d1be13a492a4046080700e israel <israel@israel-VirtualBox.(none)> 1352434614 -0600	am: ENGR00118294: Misc changes for v2009.08 upgrade.
+f580ecd000ca968376d1be13a492a4046080700e 97d69e64f5d472cc12a1050d46decee6f4169a3c israel <israel@israel-VirtualBox.(none)> 1352434615 -0600	am: ENGR00118362: Correct recovery NAND cmd
+97d69e64f5d472cc12a1050d46decee6f4169a3c ba33cbef6a497acabbaa9e4e8658186617bfb89d israel <israel@israel-VirtualBox.(none)> 1352434615 -0600	am: ENGR00118428 MX233 Uboot: reslove the build error for branch imx_v2009.08
+ba33cbef6a497acabbaa9e4e8658186617bfb89d c03d22320a96621961e07eef3d9939efb327fa22 israel <israel@israel-VirtualBox.(none)> 1352434615 -0600	am: ENGR00118576 MX25: Support Smc911x ethernet
+c03d22320a96621961e07eef3d9939efb327fa22 c65fe2c90422bb9e57c76e6350fc6b3399431a4d israel <israel@israel-VirtualBox.(none)> 1352434615 -0600	am: ENGR00118647 Fix smc911x receive packet length not set correctly
+c65fe2c90422bb9e57c76e6350fc6b3399431a4d 884e4aa7b3fd5ecbff11e2ced29094bcdcc82b26 israel <israel@israel-VirtualBox.(none)> 1352434615 -0600	am: ENGR00118682 Update the MX25 MAX Priority
+884e4aa7b3fd5ecbff11e2ced29094bcdcc82b26 f3c13e14193712356a87d5f5c34d9373295ebbe4 israel <israel@israel-VirtualBox.(none)> 1352434616 -0600	am: ENGR00118816 Fix reboot/reset failure with image on nand
+f3c13e14193712356a87d5f5c34d9373295ebbe4 9a638ebcd91e9549bdba1551ee6ecc5c05cee165 israel <israel@israel-VirtualBox.(none)> 1352434616 -0600	am: ENGR00118751: Some mmc card can't read and write from right offset.
+9a638ebcd91e9549bdba1551ee6ecc5c05cee165 99cb73cb5ad4d189b8478362dd55606276895746 israel <israel@israel-VirtualBox.(none)> 1352434616 -0600	am: ENGR00118801: Unknown information when booting from SPI-NOR.
+99cb73cb5ad4d189b8478362dd55606276895746 9474f77f9ba142737a0ecb58d3515f9b0d3c3f2a israel <israel@israel-VirtualBox.(none)> 1352434616 -0600	am: ENGR00118579 Enable MMU
+9474f77f9ba142737a0ecb58d3515f9b0d3c3f2a 9642d84070848ce0474afe147a9a8a746fd8db9a israel <israel@israel-VirtualBox.(none)> 1352434616 -0600	am: ENGR00118978: Timer adjustment for all platforms
+9642d84070848ce0474afe147a9a8a746fd8db9a 2b0f37161a9711d122d6baf95e8d51aba9c0a177 israel <israel@israel-VirtualBox.(none)> 1352434617 -0600	am: ENGR00118789 Uboot:Update NAND scan scheme to support new nand type
+2b0f37161a9711d122d6baf95e8d51aba9c0a177 c7e403ff1e2f65ce3b928db344f14684958b35c0 israel <israel@israel-VirtualBox.(none)> 1352434618 -0600	am: ENGR00119133: MX35 can't boot due to wrong frequency setting
+c7e403ff1e2f65ce3b928db344f14684958b35c0 3f1996521826e93f117f821bd2e37984535979c3 israel <israel@israel-VirtualBox.(none)> 1352434618 -0600	am: ENGR00119171: ubifs support for android recovery mode.
+3f1996521826e93f117f821bd2e37984535979c3 8ff8d6f161aca62c70de8fddd0dc8ceeebb2abc2 israel <israel@israel-VirtualBox.(none)> 1352434618 -0600	am: ENGR00119224: mmu support for mx51 3stack and mx51 bbg
+8ff8d6f161aca62c70de8fddd0dc8ceeebb2abc2 16f3835fd7bb99e734177a91b360916292356705 israel <israel@israel-VirtualBox.(none)> 1352434618 -0600	am: ENGR00118998: Can not get ip address when kernel boot up
+16f3835fd7bb99e734177a91b360916292356705 0cdd7000956c128e4fcc42e7dd51a69b338ad9a1 israel <israel@israel-VirtualBox.(none)> 1352434618 -0600	am: ENGR00119246 Add CONFIG_MXC_NAND config flag in MX25 platform
+0cdd7000956c128e4fcc42e7dd51a69b338ad9a1 3f12551f0cb6fbcd4cc7497c2a31b3d2eaa7d9fe israel <israel@israel-VirtualBox.(none)> 1352434618 -0600	am: ENGR00119254: Add mmu header for mx51 build error
+3f12551f0cb6fbcd4cc7497c2a31b3d2eaa7d9fe 97e768ebfa1b9c6fb2eaea77fa0058f6b9868780 israel <israel@israel-VirtualBox.(none)> 1352434619 -0600	am: ENGR00119486 MX25: Improve Lan9217 ethernet transfer speed
+97e768ebfa1b9c6fb2eaea77fa0058f6b9868780 7ec9c170ef17c38c307ba4bfcdcd7996dedbdabd israel <israel@israel-VirtualBox.(none)> 1352434620 -0600	am: ENGR00119505 MX51 BBG: Change DDR2 settings
+7ec9c170ef17c38c307ba4bfcdcd7996dedbdabd 357e3656a6af4431262f061400e00496236b5d85 israel <israel@israel-VirtualBox.(none)> 1352434620 -0600	am: ENGR00119526 MX25: Fix mmc read/write failure on mmc uboot
+357e3656a6af4431262f061400e00496236b5d85 0ac9d5f05b9159bb35375016eda38c7cd8d64f20 israel <israel@israel-VirtualBox.(none)> 1352434620 -0600	am: ENGR00119625 i.MX35: UBoot doesn't accept commands if program uboot to NOR
+0ac9d5f05b9159bb35375016eda38c7cd8d64f20 ed1a107e97dd3f217577577c1613924cb0652aba israel <israel@israel-VirtualBox.(none)> 1352434621 -0600	am: ENGR00119660 MX35 UBOOT: Can't boot up on 2k page size nand
+ed1a107e97dd3f217577577c1613924cb0652aba 30e61e03b9000602cabb0502f4371574ce4b453b israel <israel@israel-VirtualBox.(none)> 1352434621 -0600	am: ENGR00119591 Fix SPI-NOR reset issue
+30e61e03b9000602cabb0502f4371574ce4b453b 146e7d81898254f14285d8c6cd9b7662d674da3b israel <israel@israel-VirtualBox.(none)> 1352434621 -0600	am: ENGR00118739 Correct the board version of MX51 EVK
+146e7d81898254f14285d8c6cd9b7662d674da3b 93bafa1f4df5621f6cb389b867b993c707def637 israel <israel@israel-VirtualBox.(none)> 1352434622 -0600	am: ENGR00119701 MX51: merge some fixes in 200908 version
+93bafa1f4df5621f6cb389b867b993c707def637 f78b047a2871754c6675bec1c06998e6664345fa israel <israel@israel-VirtualBox.(none)> 1352434622 -0600	am: ENGR00119715: Add multi network support for mx35
+f78b047a2871754c6675bec1c06998e6664345fa c38ea0aca45302d9472bd9dd15c80b9561f0bfdc israel <israel@israel-VirtualBox.(none)> 1352434622 -0600	am: ENGR00119716: MX28 basic support.
+c38ea0aca45302d9472bd9dd15c80b9561f0bfdc 3765425c1a58cb2461b3a49a14100d5eb9943db3 israel <israel@israel-VirtualBox.(none)> 1352434622 -0600	am: ENGR00119738: eMMC card access failed.
+3765425c1a58cb2461b3a49a14100d5eb9943db3 a6cd7ff6342b9befe1758f91bca8203dd73c0c33 israel <israel@israel-VirtualBox.(none)> 1352434622 -0600	am: ENGR00119706: Add esdhcv1 support.
+a6cd7ff6342b9befe1758f91bca8203dd73c0c33 1f0e8d35ef8c2ab0d1318a6339b22c3c51877621 israel <israel@israel-VirtualBox.(none)> 1352434623 -0600	am: ENGR00119834: Change PDR0 clock settings for mx35 TO2
+1f0e8d35ef8c2ab0d1318a6339b22c3c51877621 f18ec9a520c44dd8f40b276ed3a5d057cfab07ab israel <israel@israel-VirtualBox.(none)> 1352434623 -0600	am: ENGR00119890: Set right mac addr to FEC register in init
+f18ec9a520c44dd8f40b276ed3a5d057cfab07ab cfd97efed73d88cf9c6ed57a822f9fbb1b2f6de0 israel <israel@israel-VirtualBox.(none)> 1352434624 -0600	am: ENGR00119894: Read right value in mxc_i2c
+cfd97efed73d88cf9c6ed57a822f9fbb1b2f6de0 34f6fb3201a2d68611673fd59afe4b8600dee4b8 israel <israel@israel-VirtualBox.(none)> 1352434624 -0600	am: ENGR00120191 MX51: Update the M4IF setting
+34f6fb3201a2d68611673fd59afe4b8600dee4b8 5db83e1c8caab6120bdfd59936a8209d1c8e1e46 israel <israel@israel-VirtualBox.(none)> 1352434624 -0600	am: ENGR00120203: Add fec_addr check for mx51
+5db83e1c8caab6120bdfd59936a8209d1c8e1e46 a4e26a6d1cbede83dfd4c4057c33131cc5231e76 israel <israel@israel-VirtualBox.(none)> 1352434625 -0600	am: ENGR00120207: Change recovery mode combo keys
+a4e26a6d1cbede83dfd4c4057c33131cc5231e76 e51791766e950d097bd5c39bfbb7d1d40b2d54f9 israel <israel@israel-VirtualBox.(none)> 1352434625 -0600	am: ENGR00120208: Change recovery mode boot_cmd strategy
+e51791766e950d097bd5c39bfbb7d1d40b2d54f9 e6045b100567046e8e94d6835e42706c5fd3e223 israel <israel@israel-VirtualBox.(none)> 1352434625 -0600	am: ENGR00120202 MX51: enable L2 cache
+e6045b100567046e8e94d6835e42706c5fd3e223 e5be3b3a04251398a7dc2e6133fd2ca850315f75 israel <israel@israel-VirtualBox.(none)> 1352434626 -0600	am: ENGR00120206 iMX28 Enable Ethernet and MMC boot support
+e5be3b3a04251398a7dc2e6133fd2ca850315f75 5a0a3162797dd51357dacf9f6b74ff77d85d5b97 israel <israel@israel-VirtualBox.(none)> 1352434626 -0600	am: ENGR00120476: Add fuse support for mx51
+5a0a3162797dd51357dacf9f6b74ff77d85d5b97 e2f9f77151749576a4d6950409ff5aac6f353983 israel <israel@israel-VirtualBox.(none)> 1352434626 -0600	am: ENGR00120830: Add eMMC and eSD fast boot support
+e2f9f77151749576a4d6950409ff5aac6f353983 8083218987e901c0b09c8280aef61900d7805302 israel <israel@israel-VirtualBox.(none)> 1352434627 -0600	am: ENGR00121029 Add MX51-BBG Uboot Firmware support
+8083218987e901c0b09c8280aef61900d7805302 da4d8be185cb52eeae9454a81c61b959e6c7e6e1 israel <israel@israel-VirtualBox.(none)> 1352434627 -0600	am: ENGR00120520: Enable MMU for mx51 and mx35
+da4d8be185cb52eeae9454a81c61b959e6c7e6e1 ccd69bd7c6ed321445d3ed202c999fbd1c78e939 israel <israel@israel-VirtualBox.(none)> 1352434627 -0600	am: ENGR00121079: Unable to get IP address in uboot
+ccd69bd7c6ed321445d3ed202c999fbd1c78e939 b2dc8b4be93ac85994b7e3af9223f2135f0f96d0 israel <israel@israel-VirtualBox.(none)> 1352434627 -0600	am: ENGR00121314: Fix mx23 and mx28 u-boot build error
+b2dc8b4be93ac85994b7e3af9223f2135f0f96d0 8aac3cadf44d6d002ab24ef1dbbd6734b4cc6488 israel <israel@israel-VirtualBox.(none)> 1352434627 -0600	am: ENGR00121504 Revert ENGR00120191 to restore M4IF values
+8aac3cadf44d6d002ab24ef1dbbd6734b4cc6488 706ca4c174274f98aa8207c8b86ca0acd0b9e16a israel <israel@israel-VirtualBox.(none)> 1352434627 -0600	am: ENGR00121379: MX28 U-BOOT enhancements
+706ca4c174274f98aa8207c8b86ca0acd0b9e16a 4dea192aeb31ac3268b7499b91e7f928cea0a0a1 israel <israel@israel-VirtualBox.(none)> 1352434629 -0600	am: ENGR000121601: FEC not work in mx28 u-boot
+4dea192aeb31ac3268b7499b91e7f928cea0a0a1 28e4588b8415f694ba42d6671187115d8b2e1c96 israel <israel@israel-VirtualBox.(none)> 1352434629 -0600	am: ENGR00121202 Add uboot support for MX53
+28e4588b8415f694ba42d6671187115d8b2e1c96 1185a822cd0dab4dbbb33ab794e4704c61b3257c israel <israel@israel-VirtualBox.(none)> 1352434629 -0600	am: ENGR00121731: Add mmu, l1cache, l2cache support for mx53
+1185a822cd0dab4dbbb33ab794e4704c61b3257c bcdbc3b246c5d72fdf7aa7087282cbc3aeb104f2 israel <israel@israel-VirtualBox.(none)> 1352434629 -0600	am: ENGR00121774 DDR 300Mhz support for MX53 uboot
+bcdbc3b246c5d72fdf7aa7087282cbc3aeb104f2 96f45aef354b9e614dcf3fd43cd010b392f4f00d israel <israel@israel-VirtualBox.(none)> 1352434629 -0600	am: ENGR00121779 Support a single kernel image on MX5x parts
+96f45aef354b9e614dcf3fd43cd010b392f4f00d 47cc443d4628c4337dc3509906ed0cea72cfdc56 israel <israel@israel-VirtualBox.(none)> 1352434629 -0600	am: ENGR00121832: Some code reconstructure for u-boot
+47cc443d4628c4337dc3509906ed0cea72cfdc56 c6f522d7e328812fc0093d6d592186106b9f1fbd israel <israel@israel-VirtualBox.(none)> 1352434631 -0600	am: ENGR00121976 UBOOT: some fix for SD/MMC card
+c6f522d7e328812fc0093d6d592186106b9f1fbd 9b756ab46416800f733c4fc69b898f6c723446f1 israel <israel@israel-VirtualBox.(none)> 1352434632 -0600	am: ENGR00122046 Update DDR init script for MX53 EVK
+9b756ab46416800f733c4fc69b898f6c723446f1 6f4be20f950fec748ea87ce1f82298e5a8a585a4 israel <israel@israel-VirtualBox.(none)> 1352434635 -0600	am: ENGR00122050: mmc can't read data whose size exceeds 32M
+6f4be20f950fec748ea87ce1f82298e5a8a585a4 39f1432e9dc2e18e4e2782c53ed8a2d331f4d57d israel <israel@israel-VirtualBox.(none)> 1352434635 -0600	am: ENGR00119033: System can not find MMC/SD card in SD slot 1
+39f1432e9dc2e18e4e2782c53ed8a2d331f4d57d 6c2dadf44c28e7ac467f8e42d352fc2883cfee6c israel <israel@israel-VirtualBox.(none)> 1352434637 -0600	am: ENGR00122085 MX35 Add Uboot Firmware support
+6c2dadf44c28e7ac467f8e42d352fc2883cfee6c 7a282c85e1a0e56ef9903b2d4c7c2891ab4afa40 israel <israel@israel-VirtualBox.(none)> 1352434638 -0600	am: ENGR00122203 UBOOT: Add MX53 ARM2 board support
+7a282c85e1a0e56ef9903b2d4c7c2891ab4afa40 4ec27288984f168b2c3bba2deb0f7b57b732e1c5 israel <israel@israel-VirtualBox.(none)> 1352434638 -0600	am: ENGR00122217 Missed iomem_valid_addr in updater configration
+4ec27288984f168b2c3bba2deb0f7b57b732e1c5 27a1df51a052e6d8e07185ae910a3fc895988254 israel <israel@israel-VirtualBox.(none)> 1352434638 -0600	am: ENGR00122030 Mfg Firmware support fot imx25
+27a1df51a052e6d8e07185ae910a3fc895988254 e691cc20915e914c9252102bf3a4255a07221456 israel <israel@israel-VirtualBox.(none)> 1352434639 -0600	am: ENGR00122395: fix license declaration issue in fsl_esdhc.h
+e691cc20915e914c9252102bf3a4255a07221456 e0d18a80275ed18901bd3ed5549f7769a0db2714 israel <israel@israel-VirtualBox.(none)> 1352434639 -0600	am: ENGR00122342: missing mx23 evk machine ID setting
+e0d18a80275ed18901bd3ed5549f7769a0db2714 157be0fd43c80317397722c8cfab98c043ab7efe israel <israel@israel-VirtualBox.(none)> 1352434639 -0600	am: ENGR00122643: Integrate linear PMIC
+157be0fd43c80317397722c8cfab98c043ab7efe dcc9ce160918c4aaf8e86439a4ad4e882a8616dd israel <israel@israel-VirtualBox.(none)> 1352434639 -0600	am: ENGR00122980: Change default env dev to mmc for bbg
+dcc9ce160918c4aaf8e86439a4ad4e882a8616dd a68f7539ca829c0e4466e753281fd3a83950402a israel <israel@israel-VirtualBox.(none)> 1352434640 -0600	am: ENGR00123265 UBOOT:Preserve NAND bad block indication
+a68f7539ca829c0e4466e753281fd3a83950402a 790d6893f0732a0b0a1e7c63c5660eccad4e2f7e israel <israel@israel-VirtualBox.(none)> 1352434641 -0600	am: ENGR00123278: Support clock operation functions
+790d6893f0732a0b0a1e7c63c5660eccad4e2f7e 5b111a4f51ee77e542ea3d840e2552e262b2ea23 israel <israel@israel-VirtualBox.(none)> 1352434641 -0600	am: ENGR00123418: Add peripheral clock setup support
+5b111a4f51ee77e542ea3d840e2552e262b2ea23 f9571b0eb617008b08e3fac6badbeb7b71f21c07 israel <israel@israel-VirtualBox.(none)> 1352434641 -0600	am: ENGR00123488 MX53 Board Identification
+f9571b0eb617008b08e3fac6badbeb7b71f21c07 c55b16ab75d820a75df24a948d9ca099befc0e6c israel <israel@israel-VirtualBox.(none)> 1352434641 -0600	am: ENGR00123630 Set ddr clk clock according to the board ID
+c55b16ab75d820a75df24a948d9ca099befc0e6c bc712808f0544c2eb48c7e7d3163730a7e806caf israel <israel@israel-VirtualBox.(none)> 1352434641 -0600	am: ENGR00123641 MX53: Add DDR3 CPU board support
+bc712808f0544c2eb48c7e7d3163730a7e806caf 8340b0e07d0de562b51e6bdddccaf35f6ab7925c israel <israel@israel-VirtualBox.(none)> 1352434643 -0600	am: ENGR00123870 MX53: Set AXI_B clock to 200Mhz
+8340b0e07d0de562b51e6bdddccaf35f6ab7925c ebef130a893b76c5094f1107a9dfeb0bcc1b37bb israel <israel@israel-VirtualBox.(none)> 1352434643 -0600	am: ENGR00123551: Add mx25 splash screen support
+ebef130a893b76c5094f1107a9dfeb0bcc1b37bb a7a3fd1a28b150d92bf48ecb832fa9a4887ae9db israel <israel@israel-VirtualBox.(none)> 1352434643 -0600	am: ENGR00124100: Add support for saving env data to active mmc device
+a7a3fd1a28b150d92bf48ecb832fa9a4887ae9db e3bc8ec6dc0e4c51a5ddbd1f54081d0830e3834d israel <israel@israel-VirtualBox.(none)> 1352434644 -0600	am: ENGR00124195 Uboot:Pass EVK RevB board ID to kernel
+e3bc8ec6dc0e4c51a5ddbd1f54081d0830e3834d 4a389bc444909dd92e01b30c126121de5ee1b5e3 israel <israel@israel-VirtualBox.(none)> 1352434644 -0600	am: ENGR00123484 mx28:support saving environment into sd1
+4a389bc444909dd92e01b30c126121de5ee1b5e3 b946911e591e1ba07ff295e2d3e3df767b99aa24 israel <israel@israel-VirtualBox.(none)> 1352434644 -0600	am: ENGR00124391 mx35: update mfg config file
+b946911e591e1ba07ff295e2d3e3df767b99aa24 da2590fb93590df02bf8a20a4e9573b877f8fdc3 israel <israel@israel-VirtualBox.(none)> 1352434646 -0600	am: ENGR00122651: Add dwc_ahsata support
+da2590fb93590df02bf8a20a4e9573b877f8fdc3 37d73c8ea4e9316eb401af3dd3695b1c4bb5da6d israel <israel@israel-VirtualBox.(none)> 1352434646 -0600	am: ENGR00123782 Fix boot partition problem for emmc
+37d73c8ea4e9316eb401af3dd3695b1c4bb5da6d 632bad6609c8eaad6db7bd19e4321548870246d6 israel <israel@israel-VirtualBox.(none)> 1352434646 -0600	am: ENGR00124652 UBOOT: MX53 env fails to load when booting from 2nd slot
+632bad6609c8eaad6db7bd19e4321548870246d6 45227c628faff58c76f617a00161036b61b3809a israel <israel@israel-VirtualBox.(none)> 1352434646 -0600	am: ENGR00124710 MX53 Uboot: Add MFG tool support
+45227c628faff58c76f617a00161036b61b3809a 78626e720a75f82901e3e0d88a93af32d2c569eb israel <israel@israel-VirtualBox.(none)> 1352434647 -0600	am: ENGR00124819 Uboot reading/writing sd card fails
+78626e720a75f82901e3e0d88a93af32d2c569eb 05a73d2ccf6b16b05f4f01f8f9831a7c424cf661 israel <israel@israel-VirtualBox.(none)> 1352434648 -0600	am: ENGR00124908 CSPI: make spi_get_cfg platform specific
+05a73d2ccf6b16b05f4f01f8f9831a7c424cf661 9f4c3af64541c7f39e4643d22d69b000246ec616 israel <israel@israel-VirtualBox.(none)> 1352434648 -0600	am: ENGR00124359 Add uboot support for MX50
+9f4c3af64541c7f39e4643d22d69b000246ec616 9d9aa0a3acfca61ab82a935f6c516af87b77c4a0 israel <israel@israel-VirtualBox.(none)> 1352434649 -0600	am: ENGR00124953 Uboot:Fix the build break for MX51 BBG board
+9d9aa0a3acfca61ab82a935f6c516af87b77c4a0 9114a9cbb8bf94128cd2f68d84dcee3b4f0461e6 israel <israel@israel-VirtualBox.(none)> 1352434649 -0600	am: ENGR00124954 MX50: init sys by ROM plug-in feature
+9114a9cbb8bf94128cd2f68d84dcee3b4f0461e6 a11ef7abe594264f898719343c9dba326ff0544b israel <israel@israel-VirtualBox.(none)> 1352434649 -0600	am: ENGR00124951 Uboot cannot initialize MMC cards
+a11ef7abe594264f898719343c9dba326ff0544b ebf9ba9abafaa7e96fcc909389e896f72a0b8342 israel <israel@israel-VirtualBox.(none)> 1352434649 -0600	am: ENGR00124912 MX53: Fix board ID check issue
+ebf9ba9abafaa7e96fcc909389e896f72a0b8342 d5e438bd81df39b8dd7cf5c5233a8ca3b379f268 israel <israel@israel-VirtualBox.(none)> 1352434649 -0600	am: ENGR00124627: Dynamic SD slot support for env data.
+d5e438bd81df39b8dd7cf5c5233a8ca3b379f268 51e9b16827cf93fa95eef1c509b4de090dd6fc4e israel <israel@israel-VirtualBox.(none)> 1352434651 -0600	am: ENGR00124984 MX53:Add spi_get_cfg function support
+51e9b16827cf93fa95eef1c509b4de090dd6fc4e 641bb206e0a875abfa98d66c0891cb5bbe9fed3a israel <israel@israel-VirtualBox.(none)> 1352434651 -0600	am: ENGR00125042 mx35: Fix error in a comment for header file
+641bb206e0a875abfa98d66c0891cb5bbe9fed3a 32921d332692d08195126f85a63510225608d59d israel <israel@israel-VirtualBox.(none)> 1352434651 -0600	am: ENGR00125045 MX53 Uboot: Adjust VDDGP voltage
+32921d332692d08195126f85a63510225608d59d 1b878a9a7618e8dac09a7d0911eef7d542f05ef1 israel <israel@israel-VirtualBox.(none)> 1352434653 -0600	am: ENGR00123924: Reconstructure fuse files and add fuse to mx53.
+1b878a9a7618e8dac09a7d0911eef7d542f05ef1 72747799c82bf303efdbd4d591fe80aefbbcaed8 israel <israel@israel-VirtualBox.(none)> 1352434653 -0600	am: ENGR00125174: MX50: change memory configurations
+72747799c82bf303efdbd4d591fe80aefbbcaed8 c2f3f73f02345efbb6a13c1c66645a97e964d5ae israel <israel@israel-VirtualBox.(none)> 1352434653 -0600	am: ENGR00125036 Uboot Add eMMC 4.4 support
+c2f3f73f02345efbb6a13c1c66645a97e964d5ae a95d09f025e0ea57829eaa8bc5cc25c24810989b israel <israel@israel-VirtualBox.(none)> 1352434654 -0600	am: ENGR00125220 MX28: SD(slot0)boot dhcp failed
+a95d09f025e0ea57829eaa8bc5cc25c24810989b f94e2f3a9a2aa4e673ebdbe9b3d5e88f8d2825a3 israel <israel@israel-VirtualBox.(none)> 1352434654 -0600	am: ENGR00125613 mfg-tool: Add mx50 mfg firmware support
+f94e2f3a9a2aa4e673ebdbe9b3d5e88f8d2825a3 f672cb35bf5a0672f88b8350c63b90badb17a66c israel <israel@israel-VirtualBox.(none)> 1352434654 -0600	am: ENGR00125735 iMX28 read mac address from fuse
+f672cb35bf5a0672f88b8350c63b90badb17a66c b899f818a89773a2d3c36a5cf965f88c1090984f israel <israel@israel-VirtualBox.(none)> 1352434654 -0600	am: ENGR00125757 mx28: change the boot mode offset to TO1.2 version
+b899f818a89773a2d3c36a5cf965f88c1090984f bda9a1552ca7bddba5f35c2b8c4062925a913915 israel <israel@israel-VirtualBox.(none)> 1352434654 -0600	am: ENGR00125324: Add splash screen code and support for epdc
+bda9a1552ca7bddba5f35c2b8c4062925a913915 dd541a96aea23d7476e40b34e4afa271ed404705 israel <israel@israel-VirtualBox.(none)> 1352434656 -0600	am: ENGR00125237: Fix incorrect copyright info.
+dd541a96aea23d7476e40b34e4afa271ed404705 72a1959504c726da000f76ef547fc51b7ae0a003 israel <israel@israel-VirtualBox.(none)> 1352434656 -0600	am: ENGR00126079: Add clk command support for mx51
+72a1959504c726da000f76ef547fc51b7ae0a003 e89943b90cab02b875fc4c97743d5ec8940e2df5 israel <israel@israel-VirtualBox.(none)> 1352434656 -0600	am: ENGR00126474 UBOOT: update DDR script on MX50 ARM2
+e89943b90cab02b875fc4c97743d5ec8940e2df5 6cec40b8429edaa0a64c6c23a608901e4ed39960 israel <israel@israel-VirtualBox.(none)> 1352434656 -0600	am: ENGR00126566 MX50:Aligned LPDDR2 initialization to the latest script
+6cec40b8429edaa0a64c6c23a608901e4ed39960 af4b76995b1bddc976e50c03bc2586b44e93a2f3 israel <israel@israel-VirtualBox.(none)> 1352434657 -0600	am: ENGR00126764 MX50: Set the memroy size to 512M on LPDDR2 board
+af4b76995b1bddc976e50c03bc2586b44e93a2f3 662a63384ffacb53c5ff312383c8846edad17cfd israel <israel@israel-VirtualBox.(none)> 1352434657 -0600	am: ENGR00127368 UBOOT: Make the android recovery code common for platforms
+662a63384ffacb53c5ff312383c8846edad17cfd fbdea6887181160b5c4fee9dd45c072b1b9bb983 israel <israel@israel-VirtualBox.(none)> 1352434657 -0600	am: ENGR00131619 UBOOT: Gcc 4.4.x complains weak inline
+fbdea6887181160b5c4fee9dd45c072b1b9bb983 73e651769d9d928e401cbef096048aade7518481 israel <israel@israel-VirtualBox.(none)> 1352434657 -0600	am: ENGR00131712 UBOOT:add DDR2 support for IMX50
+73e651769d9d928e401cbef096048aade7518481 bcafffb82da7656a9123d8968ac809bc113d61f9 israel <israel@israel-VirtualBox.(none)> 1352434658 -0600	am: ENGR00127167: Add gpmi nfc and apbh dma support for mx50.
+bcafffb82da7656a9123d8968ac809bc113d61f9 008607364c118e432adda53391cbe3ca9584a5a6 israel <israel@israel-VirtualBox.(none)> 1352434658 -0600	am: ENGR00131578: Add android recovery mode support for mx53
+008607364c118e432adda53391cbe3ca9584a5a6 5c37ee8de44ff420fed094f6c2cb514d007b32dc israel <israel@israel-VirtualBox.(none)> 1352434659 -0600	am: ENGR00131662: Fix that iram boot don't work
+5c37ee8de44ff420fed094f6c2cb514d007b32dc b4de769994b82ac119fe290fdaae0eb5a4117301 israel <israel@israel-VirtualBox.(none)> 1352434660 -0600	am: ENGR00131705-1 rename mx53_evk folder as mx53_rd
+b4de769994b82ac119fe290fdaae0eb5a4117301 f21acd797b3bb6c3206bae9974bae6cc0355b55b israel <israel@israel-VirtualBox.(none)> 1352434663 -0600	am: ENGR00131705-2 Add MX53 ARD support
+f21acd797b3bb6c3206bae9974bae6cc0355b55b 8c372282a38f8d8d61c49eec19f5224d23bf78c8 israel <israel@israel-VirtualBox.(none)> 1352434663 -0600	am: ENGR00131705-3 Import new mach-type header file
+8c372282a38f8d8d61c49eec19f5224d23bf78c8 519740c13f655cd406cf0253adb46b8b4dcfd3ee israel <israel@israel-VirtualBox.(none)> 1352434663 -0600	am: ENGR00131705-4 MX53: fix typo error for recovery
+519740c13f655cd406cf0253adb46b8b4dcfd3ee 42eb45b356a2f26da0b0682819bf6356122cb6b3 israel <israel@israel-VirtualBox.(none)> 1352434664 -0600	am: ENGR00131792: Fix mx50 lpddr2 build errors
+42eb45b356a2f26da0b0682819bf6356122cb6b3 83a063d07ce1cc030521b58861cbb67e7efb321c israel <israel@israel-VirtualBox.(none)> 1352434664 -0600	am: ENGR00131779: Use serial_mxc as uart driver for all platforms
+83a063d07ce1cc030521b58861cbb67e7efb321c 36489a8166914eae8bded8287b4d0237008913c5 israel <israel@israel-VirtualBox.(none)> 1352434664 -0600	am: ENGR00131691 MX50 RDP Uboot
+36489a8166914eae8bded8287b4d0237008913c5 810f5e53149644c9042e7e1b81dd0d5557bfeb03 israel <israel@israel-VirtualBox.(none)> 1352434664 -0600	am: ENGR00131840 MX53 ARD:use serial_mxc as uart driver
+810f5e53149644c9042e7e1b81dd0d5557bfeb03 3a17f15f534fc53cb2a826f0bfce3b9d7e458043 israel <israel@israel-VirtualBox.(none)> 1352434664 -0600	am: ENGR00131924: using ext4 as default recovery filesystem
+3a17f15f534fc53cb2a826f0bfce3b9d7e458043 cfdc8b078efe0461bd3f4aa94841f0dec7d6f17b israel <israel@israel-VirtualBox.(none)> 1352434666 -0600	am: ENGR00131936 MX5X corrent mx53_evk mx51_BBG android default env setting
+cfdc8b078efe0461bd3f4aa94841f0dec7d6f17b f7c79dd1d1cd4c3c7862bedde579d7b89dae04aa israel <israel@israel-VirtualBox.(none)> 1352434666 -0600	am: ENGR00132014: nand read and write page may fail in some pages
+f7c79dd1d1cd4c3c7862bedde579d7b89dae04aa 176d30f051810dd5ec0ea55053a19e63de3a8492 israel <israel@israel-VirtualBox.(none)> 1352434666 -0600	am: ENGR00132526 MX50 RDP Update to latest LPDDR2 script
+176d30f051810dd5ec0ea55053a19e63de3a8492 75355b9a8137d68ac8473022c93803a8a117e4a1 israel <israel@israel-VirtualBox.(none)> 1352434667 -0600	am: ENGR00132618 MX53 MFG:use serial_mxc as uart driver
+75355b9a8137d68ac8473022c93803a8a117e4a1 5e482376be7c8aad0ac24431fa94559cf93cc039 israel <israel@israel-VirtualBox.(none)> 1352434668 -0600	am: ENGR00132656 MX53 ARD: Add MFG tool support
+5e482376be7c8aad0ac24431fa94559cf93cc039 453d562b188c2e79a37749c158481dc930ed0f71 israel <israel@israel-VirtualBox.(none)> 1352434668 -0600	am: ENGR00132617 MX53: add NAND support
+453d562b188c2e79a37749c158481dc930ed0f71 4a47abb83d41950b4c784766563129a7cf84d202 israel <israel@israel-VirtualBox.(none)> 1352434669 -0600	am: ENGR00132709 MX53: add "clk nfc" command support
+4a47abb83d41950b4c784766563129a7cf84d202 8af2e28856e3c5a894e41b8f69d88bfd7ce38fab israel <israel@israel-VirtualBox.(none)> 1352434669 -0600	am: ENGR00132727 NAND: remove REG_NFC_ONE_CYCLE calling
+8af2e28856e3c5a894e41b8f69d88bfd7ce38fab c0d5d0b46fba180705706bd2ee5b441e02e18857 israel <israel@israel-VirtualBox.(none)> 1352434669 -0600	am: ENGR00132758 correct NFC_CLK definition
+c0d5d0b46fba180705706bd2ee5b441e02e18857 3faa58f87c50f0314ce19a3ee28ba07d9a606905 israel <israel@israel-VirtualBox.(none)> 1352434669 -0600	am: ENGR00132759 MX53: use 32K CLK as GPT source
+3faa58f87c50f0314ce19a3ee28ba07d9a606905 2f7ed0a71fcbb9d37a190803a99486b7152f5d73 israel <israel@israel-VirtualBox.(none)> 1352434669 -0600	am: ENGR00132886 mx50-rdp: add mx50 rdp board mfg-tool firmware defconfig
+2f7ed0a71fcbb9d37a190803a99486b7152f5d73 30a57c69db43f6054cd7df586141228f56999db7 israel <israel@israel-VirtualBox.(none)> 1352434669 -0600	am: ENGR00132957 mfg-tool: should add stop usb operation for mx50 rdp
+30a57c69db43f6054cd7df586141228f56999db7 1ec71a0f1787df3e8e41b982574591d6f8a5314e israel <israel@israel-VirtualBox.(none)> 1352434671 -0600	am: ENGR00132965 add MT29F16G08ABACA NAND description
+1ec71a0f1787df3e8e41b982574591d6f8a5314e 06b513e203eaba5d04a2e0b8f3265f946ff2e51b israel <israel@israel-VirtualBox.(none)> 1352434671 -0600	am: ENGR00133049 Support nand flash for MX28
+06b513e203eaba5d04a2e0b8f3265f946ff2e51b a398baa68cc1156ef5a767aae6954bd8e8c5f89a israel <israel@israel-VirtualBox.(none)> 1352434671 -0600	am: ENGR00133530 plug-in support mfgtools and sb_loader
+a398baa68cc1156ef5a767aae6954bd8e8c5f89a c24836c4b694e1278a19c9b301429bc687b62dfd israel <israel@israel-VirtualBox.(none)> 1352434672 -0600	am: ENGR00132909 MX53 Uboot: Support for TO2
+c24836c4b694e1278a19c9b301429bc687b62dfd 3823fae16ca3aa983c899fd54f0fde5a40346472 israel <israel@israel-VirtualBox.(none)> 1352434673 -0600	am: Get common/cmd_fastboot.c and include/fastboot.h from omap uboot git. The code realized common Android USB fastboot protocol.
+3823fae16ca3aa983c899fd54f0fde5a40346472 d2bf35f5af04e5bcd0e59ec281d21b1d419b9627 israel <israel@israel-VirtualBox.(none)> 1352434673 -0600	am: ENGR00133743 Change code style of fastboot code to pass review-commits.
+d2bf35f5af04e5bcd0e59ec281d21b1d419b9627 d1b9ce215201d91b1847df9758b9b72d17f16155 israel <israel@israel-VirtualBox.(none)> 1352434674 -0600	am: ENGR00133756:UBOOT:NAND:Remove the 2G limitation from NAND driver
+d1b9ce215201d91b1847df9758b9b72d17f16155 588996f00a57a0166869734b226eff2516db76ca israel <israel@israel-VirtualBox.(none)> 1352434674 -0600	am: ENGR00133689 MX51: set MC13892 charge output voltage as 4.2V
+588996f00a57a0166869734b226eff2516db76ca 13172ae5441e251f52b6ec3bb36013f46c6b5b89 israel <israel@israel-VirtualBox.(none)> 1352434674 -0600	am: ENGR00133551-1 Add freescale usb udc support for i.mx51 platform.
+13172ae5441e251f52b6ec3bb36013f46c6b5b89 0ffe295a261983e2323cfcb0e4eac8a445e45986 israel <israel@israel-VirtualBox.(none)> 1352434674 -0600	am: ENGR00133551-2 Add fastboot driver support for android.
+0ffe295a261983e2323cfcb0e4eac8a445e45986 67c162fa76b343fa3d6d48b1523509601e1b23a7 israel <israel@israel-VirtualBox.(none)> 1352434674 -0600	am: ENGR00133124: Add nand support for mx50 rdp
+67c162fa76b343fa3d6d48b1523509601e1b23a7 a1300e69dbd860f25b4389b2814677d95f567b2f israel <israel@israel-VirtualBox.(none)> 1352434676 -0600	am: ENGR00134098-1 MX51: Update fastboot usb init seq
+a1300e69dbd860f25b4389b2814677d95f567b2f f87f8ccdee8c76e4260a98f6753f41eaa919b164 israel <israel@israel-VirtualBox.(none)> 1352434676 -0600	am: ENGR00134098-2 MX53: Add fastboot support for android.
+f87f8ccdee8c76e4260a98f6753f41eaa919b164 7c7fec8f5964baa7a6d349f48e33814b5bd1fcef israel <israel@israel-VirtualBox.(none)> 1352434676 -0600	am: ENGR00133579 Uboot ESDHCv3 Remove workaround for DLL
+7c7fec8f5964baa7a6d349f48e33814b5bd1fcef 72355ecf5d67e3285db5d9df52027c0fc6687a67 israel <israel@israel-VirtualBox.(none)> 1352434676 -0600	am: ENGR00133437 MX50 Uboot support for TO 1.1.1 precode
+72355ecf5d67e3285db5d9df52027c0fc6687a67 6306a8df54405c0b96ee01d89eec44f32274c848 israel <israel@israel-VirtualBox.(none)> 1352434676 -0600	am: ENGR12345678 Change ddr write delay in the PHY
+6306a8df54405c0b96ee01d89eec44f32274c848 8c2d6d874cd644ebfc388c49d6ca71aaf190c0f0 israel <israel@israel-VirtualBox.(none)> 1352434678 -0600	am: ENGR00025557: MX50 Add ZQ calibration support for TO1.1.1.
+8c2d6d874cd644ebfc388c49d6ca71aaf190c0f0 2eef8a65819cdfa541d7390a74ed80c0a7891f72 israel <israel@israel-VirtualBox.(none)> 1352434679 -0600	am: ENGR00133744: Merge mx50_arm2 to mx50_rdp
+2eef8a65819cdfa541d7390a74ed80c0a7891f72 f2d7f9d5056d9c1db4aa3167f8063418780d581d israel <israel@israel-VirtualBox.(none)> 1352434679 -0600	am: NAND: Update to support 64 bit device size
+f2d7f9d5056d9c1db4aa3167f8063418780d581d 0be566c28b8d2e58ead9acee1315177f37a90248 israel <israel@israel-VirtualBox.(none)> 1352434679 -0600	am: ENGR00134220-1 NAND: fix up the chip select handling
+0be566c28b8d2e58ead9acee1315177f37a90248 9076a6da45c45791ba148bd89954013148e019be israel <israel@israel-VirtualBox.(none)> 1352434679 -0600	am: ENGR00134220-2 Need use CONFIG_SYS_NAND_MAX_CHIPS
+9076a6da45c45791ba148bd89954013148e019be adcc84f4f541176c92bbedb5fb75f26b1ed661ec israel <israel@israel-VirtualBox.(none)> 1352434680 -0600	am: ENGR00134220-3 Fix the nand bad command issue
+adcc84f4f541176c92bbedb5fb75f26b1ed661ec c6e522391bea7a023e6c269961b758306d284150 israel <israel@israel-VirtualBox.(none)> 1352434680 -0600	am: ENGR00136031 mfgtool: sync config file for mx50 rdp
+c6e522391bea7a023e6c269961b758306d284150 d7ad0ffe2b17037c474c59c072e69561e9280d0b israel <israel@israel-VirtualBox.(none)> 1352434680 -0600	am: ENGR00136042 Add ZQ calib config and update script for DDR2
+d7ad0ffe2b17037c474c59c072e69561e9280d0b ab96c1a39b675e509f664a82c80512b77ff1aa3b israel <israel@israel-VirtualBox.(none)> 1352434681 -0600	am: ENGR00136081 DDR script update for MX53 TO2 ARD
+ab96c1a39b675e509f664a82c80512b77ff1aa3b c5a4c0f393c4f1a06ad1509208102850fb984de0 israel <israel@israel-VirtualBox.(none)> 1352434681 -0600	am: ENGR00136170 MX50 Add ZQ calibration revision for TO1.1
+c5a4c0f393c4f1a06ad1509208102850fb984de0 7b39a1b5b2c63a28adff7012a7415626af5a6d13 israel <israel@israel-VirtualBox.(none)> 1352434682 -0600	am: Add linux framebuffer header include/linux/fb.h
+7b39a1b5b2c63a28adff7012a7415626af5a6d13 6807d3b35431c548bb52ddfa94fc039e7b98228d israel <israel@israel-VirtualBox.(none)> 1352434682 -0600	am: MX51: Add IPU driver for video support
+6807d3b35431c548bb52ddfa94fc039e7b98228d a9a66b381cffeb06d9f16adcd8baadfeee7ca062 israel <israel@israel-VirtualBox.(none)> 1352434683 -0600	am: MX51: Add video support
+a9a66b381cffeb06d9f16adcd8baadfeee7ca062 a0ea5f5cff1f5b7714f1d4da33584192bb10e147 israel <israel@israel-VirtualBox.(none)> 1352434683 -0600	am: ENGR00136038: Remove config CONFIG_EMMC_DDR_MODE
+a0ea5f5cff1f5b7714f1d4da33584192bb10e147 1697b5692c8e7f8890d5984dfc990733f1795a4e israel <israel@israel-VirtualBox.(none)> 1352434683 -0600	am: ENGR00133727: uart outputs messy code when kernel starts on mx51
+1697b5692c8e7f8890d5984dfc990733f1795a4e 13a9868af739eeef4cd9bff2ffbffb0e29b1f230 israel <israel@israel-VirtualBox.(none)> 1352434684 -0600	am: ENGR00134068 MX51 BBG:Support CLAA WVGA splashimage
+13a9868af739eeef4cd9bff2ffbffb0e29b1f230 37f2450b90ee023b856902d3c1937df36ada12b3 israel <israel@israel-VirtualBox.(none)> 1352434684 -0600	am: ENGR00137214 MX50: Turn on ZQ calib config by default and fix hang problem
+37f2450b90ee023b856902d3c1937df36ada12b3 e112ab02f0ebd83203bd4dc654bc5273e7f8dad2 israel <israel@israel-VirtualBox.(none)> 1352434684 -0600	am: ENGR00137273 uboot: update the android default env for 2.6.35 kernel
+e112ab02f0ebd83203bd4dc654bc5273e7f8dad2 cda9d65ae0169e1d4af0e601b94f6cd173b3d4b8 israel <israel@israel-VirtualBox.(none)> 1352434685 -0600	am: ENGR00137211 U-Boot MX5x: Incorrect GPL license header on files
+cda9d65ae0169e1d4af0e601b94f6cd173b3d4b8 cdb6046be6bfde40516e66870548e444bdac32d7 israel <israel@israel-VirtualBox.(none)> 1352434685 -0600	am: ENGR00137390 UBOOT:NAND: BBT not found on MX53 board
+cdb6046be6bfde40516e66870548e444bdac32d7 ec6591cc1b9e07d09fc8b4249ee1c54c39ec713c israel <israel@israel-VirtualBox.(none)> 1352434686 -0600	am: ENGR00137372 MX53: Switch back to use DCD and update DDR scripts
+ec6591cc1b9e07d09fc8b4249ee1c54c39ec713c 3a5b67dd12f51b61119f09f4e884741f17ea4b1a israel <israel@israel-VirtualBox.(none)> 1352434686 -0600	am: ENGR00137408: Add FAT32 support
+3a5b67dd12f51b61119f09f4e884741f17ea4b1a b036a2c02b196fe4a51b9d0271bd5198d16484b7 israel <israel@israel-VirtualBox.(none)> 1352434686 -0600	am: ENGR00136863-1: Change mmc framework architecture.
+b036a2c02b196fe4a51b9d0271bd5198d16484b7 6973ef4e863fcf9e1928a8a488bff12a729367ce israel <israel@israel-VirtualBox.(none)> 1352434686 -0600	am: ENGR00136863-2: Fix mx53 CMD12 issue.
+6973ef4e863fcf9e1928a8a488bff12a729367ce 7c462af620306ae7e6c6e1801a5a1f4a6d14f44b israel <israel@israel-VirtualBox.(none)> 1352434688 -0600	am: ENGR00137410 MX53 split board files into different folders
+7c462af620306ae7e6c6e1801a5a1f4a6d14f44b 2ee51cb016a01674b61fbb4545e959ae3f3ffe0c israel <israel@israel-VirtualBox.(none)> 1352434688 -0600	am: ENGR00136075 MX53: Add SMD board support
+2ee51cb016a01674b61fbb4545e959ae3f3ffe0c 50cdc204c8e52631b43e7e7dc51fe0af76f91437 israel <israel@israel-VirtualBox.(none)> 1352434688 -0600	am: ENGR00137497-1 Import new mach-type header file
+50cdc204c8e52631b43e7e7dc51fe0af76f91437 6c1b3e38ea47be68f57f5d76208936fe8497c395 israel <israel@israel-VirtualBox.(none)> 1352434688 -0600	am: ENGR00137497-2 MX53: Add LOCO board support
+6c1b3e38ea47be68f57f5d76208936fe8497c395 0ce205a0c40260b93701af441dc259dadb0d5f45 israel <israel@israel-VirtualBox.(none)> 1352434689 -0600	am: ENGR00137596 MX53 Uboot SMC911X driver needs to get mac addr from IIM
+0ce205a0c40260b93701af441dc259dadb0d5f45 e5a9fa5a99494271b1318863c2423cff5a262a73 israel <israel@israel-VirtualBox.(none)> 1352434690 -0600	am: ENGR00137642 MX53 Uboot Align DDR3 script for Loco and SMD boards
+e5a9fa5a99494271b1318863c2423cff5a262a73 77d5238a8518f3a82ec95e3837b31e81c3e0cd04 israel <israel@israel-VirtualBox.(none)> 1352434690 -0600	am: ENGR00137604: Change PLL4 to 455MHz for mx53
+77d5238a8518f3a82ec95e3837b31e81c3e0cd04 60cb67aad447420bc77d9145b2744739dfba77bf israel <israel@israel-VirtualBox.(none)> 1352434690 -0600	am: ENGR00137603 Add mx53_smd_android config for android
+60cb67aad447420bc77d9145b2744739dfba77bf e8243c208116cf70c347ce6e3ce2431034e8867e israel <israel@israel-VirtualBox.(none)> 1352434690 -0600	am: ENGR00137713 MX53 Uboot SMSC Fix order in which mac addr bytes are read from IIM
+e8243c208116cf70c347ce6e3ce2431034e8867e 28809e304335a82444ec2f621e542e1c08d45d15 israel <israel@israel-VirtualBox.(none)> 1352434690 -0600	am: ENGR00137766 BBG splashimage:Allocate cmap for panel_info
+28809e304335a82444ec2f621e542e1c08d45d15 c3a9f5281d9d62ef5ea1bfbcd0f118416f883ea4 israel <israel@israel-VirtualBox.(none)> 1352434690 -0600	am: ENGR00137767 IPUv3 video:Support splashimage with MMU disabled
+c3a9f5281d9d62ef5ea1bfbcd0f118416f883ea4 57670744a0a78a117fe3602742f81e3a183b068e israel <israel@israel-VirtualBox.(none)> 1352434692 -0600	am: ENGR00137841 splashimage:Correct horizontal display position
+57670744a0a78a117fe3602742f81e3a183b068e 9eb6a4ab54f0fb64e98582101f3497ea1e33f3ef israel <israel@israel-VirtualBox.(none)> 1352434692 -0600	am: ENGR00136869: SATA device can't init and a typo in sata help
+9eb6a4ab54f0fb64e98582101f3497ea1e33f3ef 2a81b2c3094095538430e09e59593353400565bb israel <israel@israel-VirtualBox.(none)> 1352434692 -0600	am: ENGR00137358: Add saving environment to sata device support
+2a81b2c3094095538430e09e59593353400565bb a63cbed23c003c918da7c82be0fb0e4f5dc4fd92 israel <israel@israel-VirtualBox.(none)> 1352434692 -0600	am: ENGR00137791 MX53: Update for MFG tool
+a63cbed23c003c918da7c82be0fb0e4f5dc4fd92 30efda60fa48614261f124a592b0a4b1c83f021d israel <israel@israel-VirtualBox.(none)> 1352434694 -0600	am: ENGR00137894-1 Add imx pwm driver support
+30efda60fa48614261f124a592b0a4b1c83f021d 4ddc51a8cfddc1b1a0ccc23b7f8852654107de77 israel <israel@israel-VirtualBox.(none)> 1352434695 -0600	am: ENGR00137894-2 MX53: Add ipu base addr and ipu clock
+4ddc51a8cfddc1b1a0ccc23b7f8852654107de77 ae519017f57807f8f05070a4501c9cdd897e6d22 israel <israel@israel-VirtualBox.(none)> 1352434695 -0600	am: ENGR00137894-3 IPU driver enhancement
+ae519017f57807f8f05070a4501c9cdd897e6d22 0514485081779374758c6d411708cd20dcb06352 israel <israel@israel-VirtualBox.(none)> 1352434697 -0600	am: ENGR00137894-4 IPUv3 FB: IPUv3 FB driver enhancement
+0514485081779374758c6d411708cd20dcb06352 c6584800c8ee1ccbd6fb94e00a9c86c121eed43b israel <israel@israel-VirtualBox.(none)> 1352434697 -0600	am: ENGR00137894-5 MX53 ARD:Support splashimage
+c6584800c8ee1ccbd6fb94e00a9c86c121eed43b f635c9d3745c5d3267c8fe43b1e66c60bba56945 israel <israel@israel-VirtualBox.(none)> 1352434698 -0600	am: ENGR00137894-6 MX53 SMD:Support splashimage
+f635c9d3745c5d3267c8fe43b1e66c60bba56945 9d2a8a0c3fd464f59b5609347ec3c8e1506eadb2 israel <israel@israel-VirtualBox.(none)> 1352434699 -0600	am: ENGR00137552 MX53: increase VDDGP as 1.2V for 1GHZ
+9d2a8a0c3fd464f59b5609347ec3c8e1506eadb2 3c63060f627762fc0ec10022b011864539d022dd israel <israel@israel-VirtualBox.(none)> 1352434700 -0600	am: ENGR00138040-1 MX53 SMD Android:Support splashimage
+3c63060f627762fc0ec10022b011864539d022dd 2a27f78d64baafcbee5b0a0f9559f67f771ee7fe israel <israel@israel-VirtualBox.(none)> 1352434700 -0600	am: ENGR00138040-2 MX51 BBG Android:Support splashimage
+2a27f78d64baafcbee5b0a0f9559f67f771ee7fe 692caddf9a7b67ab534b4a939cc952d2944442e2 israel <israel@israel-VirtualBox.(none)> 1352434706 -0600	am: ENGR00138040-3 Protect splashimage related stuffs by config
+692caddf9a7b67ab534b4a939cc952d2944442e2 f9919e49f2dd4531b0563c21daeeeba74996c82b israel <israel@israel-VirtualBox.(none)> 1352434707 -0600	am: ENGR00138148 MX53 TO2.0 EVK: change the default core as 1GHZ
+f9919e49f2dd4531b0563c21daeeeba74996c82b 9a045fe8598c19976e21fe0767cde84eb9af0a80 israel <israel@israel-VirtualBox.(none)> 1352434707 -0600	am: ENGR00138191 disable the SPLASH SCREEN for android
+9a045fe8598c19976e21fe0767cde84eb9af0a80 2241554c3470c5320f82ced324be5adb669b6bf2 israel <israel@israel-VirtualBox.(none)> 1352434707 -0600	am: ENGR00138240 Disable splashimage support for PDK
+2241554c3470c5320f82ced324be5adb669b6bf2 47f8368002ff35e0de957dbf49179ce07a173db1 israel <israel@israel-VirtualBox.(none)> 1352434710 -0600	am: ENGR00138359 Change uramdisk from 6M byte offset of android fastboot
+47f8368002ff35e0de957dbf49179ce07a173db1 8be7687301cf03d8c0b7da9fb6ec42a9f80a974c israel <israel@israel-VirtualBox.(none)> 1352434710 -0600	am: ENGR00138390 android recovery, enlarge uImage size
+8be7687301cf03d8c0b7da9fb6ec42a9f80a974c dbc36a8f6c46a63b0e156f4fffcf6ec96d046cd0 israel <israel@israel-VirtualBox.(none)> 1352434711 -0600	am: ENGR00138468-1 MX5 video:Disable DP/DC/DI/IDMAC before go to kernel
+dbc36a8f6c46a63b0e156f4fffcf6ec96d046cd0 d4306b9f0c63595fb25a11176aa2f8e57cc8673e israel <israel@israel-VirtualBox.(none)> 1352434711 -0600	am: ENGR00138468-2 Enable splashimage support for several platforms
+d4306b9f0c63595fb25a11176aa2f8e57cc8673e 0b7249d080e53add1238cffa8a7411e005fe1b9e israel <israel@israel-VirtualBox.(none)> 1352434712 -0600	am: ENGR00138422-1 Fix usb connection failure if do sata init
+0b7249d080e53add1238cffa8a7411e005fe1b9e f0f4e5caadd93a2e2523291e7a50048ddd3bc8d2 israel <israel@israel-VirtualBox.(none)> 1352434712 -0600	am: ENGR00138422-2 Add SATA storage support for android fastboot
+f0f4e5caadd93a2e2523291e7a50048ddd3bc8d2 628fd6472fae218e802a623cbbf5d15a83ac23e3 israel <israel@israel-VirtualBox.(none)> 1352434712 -0600	am: ENGR00138422-3 Android fastboot: Pass block offset to cmd_fastboot
+628fd6472fae218e802a623cbbf5d15a83ac23e3 2aaaa51d623e67dd8a9bb52fe1f869743acc4a61 israel <israel@israel-VirtualBox.(none)> 1352434712 -0600	am: ENGR00138534 Disable splashimage support defaultly for PDK
+2aaaa51d623e67dd8a9bb52fe1f869743acc4a61 129001678ead345dfa905233dc7d2f1907360cfa israel <israel@israel-VirtualBox.(none)> 1352434714 -0600	am: ENGR00118558 MX51/MX53: change the boot command of android boards.
+129001678ead345dfa905233dc7d2f1907360cfa 1a16c267031d6b157d9b7c3643bebd35e3370b1a israel <israel@israel-VirtualBox.(none)> 1352434714 -0600	am: ENGR00138549 Android fastboot: Support eMMC4.4 on imx53_smd
+1a16c267031d6b157d9b7c3643bebd35e3370b1a 856d7f873f166fbab78e30bf0c55d67379e1d7ad israel <israel@israel-VirtualBox.(none)> 1352434715 -0600	am: ENGR00138635 MX50 Update mDDR script to use more optimized settings
+856d7f873f166fbab78e30bf0c55d67379e1d7ad c1f1f9a7fcdaf64002c454496b3a5b7d5c1cb1de israel <israel@israel-VirtualBox.(none)> 1352434715 -0600	am: ENGR00138689 MX50 Update LPDDR2 script to use more optimized settings
+c1f1f9a7fcdaf64002c454496b3a5b7d5c1cb1de 8b410994d4cb2c538b9151e5b3ce197878ee9f04 israel <israel@israel-VirtualBox.(none)> 1352434715 -0600	am: ENGR00139120: Correct CONFIG_CMD_MMC to CONFIG_CMD_IIM for iim
+8b410994d4cb2c538b9151e5b3ce197878ee9f04 1607333799891140aee10818ae11e655ad6ec610 israel <israel@israel-VirtualBox.(none)> 1352434715 -0600	am: ENGR00139924 mx53 smd &loco: set bootup vdd GP to 1.2v
+1607333799891140aee10818ae11e655ad6ec610 d4238bef90db5fd3ccbaf1bbeb7bbd7e056322d6 israel <israel@israel-VirtualBox.(none)> 1352434716 -0600	am: ENGR00139747: Read fuse to distinguish between mx53 revA and revB
+d4238bef90db5fd3ccbaf1bbeb7bbd7e056322d6 14ea29d0fc75e104af25f4449c05eee4055f8726 israel <israel@israel-VirtualBox.(none)> 1352434716 -0600	am: ENGR00138533: Fix sata write operation random failure issue
+14ea29d0fc75e104af25f4449c05eee4055f8726 244483c7aa9a45b806d9bcbedd845b77a895e207 israel <israel@israel-VirtualBox.(none)> 1352434717 -0600	am: ENGR00140089 MX53_SMD: update command line.
+244483c7aa9a45b806d9bcbedd845b77a895e207 46f9ea24a6eb6592f0e5cc7f94e6e204a0cb91bb israel <israel@israel-VirtualBox.(none)> 1352434717 -0600	am: ENGR00140692 Update for DDR3-based MX53 SABRE Auto boards
+46f9ea24a6eb6592f0e5cc7f94e6e204a0cb91bb 4d294be9dbd0c78f46cbcce2655f94c1f38d1106 israel <israel@israel-VirtualBox.(none)> 1352434717 -0600	am: ENGR00140750 mx53smd: set the default DDR size to 512MB for android configure
+4d294be9dbd0c78f46cbcce2655f94c1f38d1106 2397dad610657ee9a594727f0f31ebff895d48f7 israel <israel@israel-VirtualBox.(none)> 1352434717 -0600	am: ENGR00140767: Improve mx5x DDR clock function
+2397dad610657ee9a594727f0f31ebff895d48f7 b2ff6b1ca70bf6517e64a5c4ff971440893db97e israel <israel@israel-VirtualBox.(none)> 1352434719 -0600	am: ENGR00140486 Add SPI NOR Flash M25P32 driver
+b2ff6b1ca70bf6517e64a5c4ff971440893db97e 40527c4ee1328a84a5adcd48be0bd7c7bb8a7d7e israel <israel@israel-VirtualBox.(none)> 1352434719 -0600	am: ENGR00140825: Add mx53 to2.1 chip id recognition
+40527c4ee1328a84a5adcd48be0bd7c7bb8a7d7e a16e6ccd23913983bab3b694bd814b245849e0db israel <israel@israel-VirtualBox.(none)> 1352434719 -0600	am: ENGR00140824 Android: Enable fastboot support for mx50 rdp
+a16e6ccd23913983bab3b694bd814b245849e0db 02c884ce49f73ca7b932ec906002ba0d543bc7c1 israel <israel@israel-VirtualBox.(none)> 1352434720 -0600	am: ENGR00140873: MMC may wrongly regconize 2GB eMMC as high capacity
+02c884ce49f73ca7b932ec906002ba0d543bc7c1 62f3a86c2ba698f038106c1f4c293c68b87c077d israel <israel@israel-VirtualBox.(none)> 1352434720 -0600	am: ENGR00140872 Add MX50 RD3 Support
+62f3a86c2ba698f038106c1f4c293c68b87c077d 97a677650c240a8608b9c92ad2796b4c4d7d9325 israel <israel@israel-VirtualBox.(none)> 1352434720 -0600	am: ENGR00140982 MX53 Increase VDDGP to 1.25V for 1 GHz
+97a677650c240a8608b9c92ad2796b4c4d7d9325 0e718cf76142bcf85e3c614a0dcfa2f140efd711 israel <israel@israel-VirtualBox.(none)> 1352434720 -0600	am: ENGR00140537 mx53: update vddgp according to new data sheet
+0e718cf76142bcf85e3c614a0dcfa2f140efd711 84f2ba0175ed994cc9f28eb3953ab3d88df9cfb4 israel <israel@israel-VirtualBox.(none)> 1352434720 -0600	am: ENGR00141000 MX50_RDP: add android recovery support.
+84f2ba0175ed994cc9f28eb3953ab3d88df9cfb4 a6d1eef9f1d1a585d668d3f88bfe961b424f75a5 israel <israel@israel-VirtualBox.(none)> 1352434721 -0600	am: ENGR00141058 MX50_RDP: Android Fix typo in recoevry command line
+a6d1eef9f1d1a585d668d3f88bfe961b424f75a5 f491b2288ed22c1c80b22de8be4c3d16386e12e3 israel <israel@israel-VirtualBox.(none)> 1352434722 -0600	am: ENGR00141129: Add m25p32 spi_nor support for mx53_smd
+f491b2288ed22c1c80b22de8be4c3d16386e12e3 3478c686d4cb57eef98a6e9f7348b1a3961afdae israel <israel@israel-VirtualBox.(none)> 1352434722 -0600	am: ENGR00141157: Add m25p32 spi nor config to mx53_smd_android
+3478c686d4cb57eef98a6e9f7348b1a3961afdae 0a5248db586a17505e339a867eec88b998cdce7e israel <israel@israel-VirtualBox.(none)> 1352434723 -0600	am: ENGR00141363: change mx53 uart clk parent to pll2
+0a5248db586a17505e339a867eec88b998cdce7e 37b5e88be609979d696186823bf4ea8c31fa555b israel <israel@israel-VirtualBox.(none)> 1352434724 -0600	am: ENGR00141410 MX50 RD3: Set GPIO4_16 to Enable DCDC_3V15
+37b5e88be609979d696186823bf4ea8c31fa555b ff264a05c58bb21fb848f526f5f8cca6a23b069a israel <israel@israel-VirtualBox.(none)> 1352434724 -0600	am: ENGR00141556: Fix copyright issue
+ff264a05c58bb21fb848f526f5f8cca6a23b069a 2ecb95b1c50a646e1216db462764458255e479a6 israel <israel@israel-VirtualBox.(none)> 1352434724 -0600	am: ENGR00141335-1: Use bypass way to set ddr dll in mx53
+2ecb95b1c50a646e1216db462764458255e479a6 bab9111837d5062a2d62eeb385bf2cc65e5b309d israel <israel@israel-VirtualBox.(none)> 1352434724 -0600	am: ENGR00141335-2: get more accurate ipg_per clock frequency
+bab9111837d5062a2d62eeb385bf2cc65e5b309d a52cde935c4b11c8870058742bfe7eac0be93fd0 israel <israel@israel-VirtualBox.(none)> 1352434724 -0600	am: ENGR00141335-3: Add CONFIG_EMMC_DDR_PORT_DETECT to mx53 and mx50config files
+a52cde935c4b11c8870058742bfe7eac0be93fd0 c85708acb20d0d0ba2c4e451fd644e3aa9f415e8 israel <israel@israel-VirtualBox.(none)> 1352434725 -0600	am: ENGR00142246 MX50 Update DDR2 script to use more optimized settings
+c85708acb20d0d0ba2c4e451fd644e3aa9f415e8 84ad8ed29a4fd490d36963a2b6ecc526a6ad9ad5 israel <israel@israel-VirtualBox.(none)> 1352434726 -0600	am: ENGR00142247 MX50: Add PD+3 routine for all DDR types
+84ad8ed29a4fd490d36963a2b6ecc526a6ad9ad5 b57f6e35203a26d44e283ed78debcd1b988ecdf4 israel <israel@israel-VirtualBox.(none)> 1352434726 -0600	am: ENGR00142259 set UART2_RXD (GP6_11) to high
+b57f6e35203a26d44e283ed78debcd1b988ecdf4 c4ba5260e3c7b79db59d37f8bb64ec7dcf8d0cbf israel <israel@israel-VirtualBox.(none)> 1352434726 -0600	am: ENGR00141885: mx50 and mx53 reboot fail when booting from spi nor
+c4ba5260e3c7b79db59d37f8bb64ec7dcf8d0cbf eeba42a5b3675e6ddd432f7b6160147007426744 israel <israel@israel-VirtualBox.(none)> 1352434726 -0600	am: ENGR00142322: mx53-smd: spi nor: can't erase 0x200000 size
+eeba42a5b3675e6ddd432f7b6160147007426744 17689b9ffad7665ece1a68d2f16075bf418e5350 israel <israel@israel-VirtualBox.(none)> 1352434726 -0600	am: ENGR00142497 Android: MX53_SMD: check eMMC and SD recovery file.
+17689b9ffad7665ece1a68d2f16075bf418e5350 1b9563877ae91c193da8d930096cc84f060b37f1 israel <israel@israel-VirtualBox.(none)> 1352434728 -0600	am: ENGR00142740 mx50 rdp: mfg support GPMI nand by command line
+1b9563877ae91c193da8d930096cc84f060b37f1 1ec0d739e6b26a23f7655a59995950c414d0b7b9 israel <israel@israel-VirtualBox.(none)> 1352434729 -0600	am: ENGR00143178 mx53 ARD DDR3 board: add MFG tool support
+1ec0d739e6b26a23f7655a59995950c414d0b7b9 c06fbcdf11f9ac99dece3185bd4628129f216592 israel <israel@israel-VirtualBox.(none)> 1352434729 -0600	am: ENGR00142995 MX50: Enable uSDHC instead of eSDHC for SDR mode
+c06fbcdf11f9ac99dece3185bd4628129f216592 2a78605ca0afac3f0df758e4e46bcea32bad1a1d israel <israel@israel-VirtualBox.(none)> 1352434729 -0600	am: ENGR00143428 mx53 ard RevB: use internal clock for sata
+2a78605ca0afac3f0df758e4e46bcea32bad1a1d 029fa90da15a9ed74a7b831256cf36e8bedeb823 israel <israel@israel-VirtualBox.(none)> 1352434729 -0600	am: ENGR00143442 uboot: support android spi boot and mfg on mx50 rd3 board
+029fa90da15a9ed74a7b831256cf36e8bedeb823 6d3634c5e825773a6d9232dd7a859d1809111689 israel <israel@israel-VirtualBox.(none)> 1352434729 -0600	am: ENGR00143457: Don't let ROM copy .bss section
+6d3634c5e825773a6d9232dd7a859d1809111689 f58ec7701c67a5b8e118474a0fe8d7a7344438c0 israel <israel@israel-VirtualBox.(none)> 1352434730 -0600	am: ENGR00143461 mx51 evk: increase VDDGP as 1.1v for 800MHZ
+f58ec7701c67a5b8e118474a0fe8d7a7344438c0 506eafb69b897d975807d4f93db52356418b9316 israel <israel@israel-VirtualBox.(none)> 1352434731 -0600	am: ENGR00143469 mx53 smd: pull down GPIO_9 to reset the board
+506eafb69b897d975807d4f93db52356418b9316 1ccb47dba20be8bb154472caf8ab577e56e64125 israel <israel@israel-VirtualBox.(none)> 1352434731 -0600	am: ENGR00143613 uboot: update the android ramdisk load address
+1ccb47dba20be8bb154472caf8ab577e56e64125 fed225413465236b73e258142393d57a99d42d3c israel <israel@israel-VirtualBox.(none)> 1352434731 -0600	am: ENGR00143570 mx53: change the default environment setting
+fed225413465236b73e258142393d57a99d42d3c a2495323af4210702362d5b947af448498483993 israel <israel@israel-VirtualBox.(none)> 1352434731 -0600	am: ENGR00143302 Add mc34708 pmic support on loco/Ripley board
+a2495323af4210702362d5b947af448498483993 98d066cf9184c0a6bae58568ac57acdce2ed61e8 israel <israel@israel-VirtualBox.(none)> 1352434733 -0600	am: ENGR00143298: Reinit uart after using clk command
+98d066cf9184c0a6bae58568ac57acdce2ed61e8 fd27931889f5245ee083f79dd4d46330fcea91d1 israel <israel@israel-VirtualBox.(none)> 1352434733 -0600	am: ENGR00143704: U_BOOT: Nand oobsize is wrong in some nand chips
+fd27931889f5245ee083f79dd4d46330fcea91d1 c5cd7f3bffbdf1e72f7705c98aecedcd7c40ab0f israel <israel@israel-VirtualBox.(none)> 1352434734 -0600	am: ENGR00143837 mx50 rd3: support android boot from RD3 NAND device
+c5cd7f3bffbdf1e72f7705c98aecedcd7c40ab0f 00c94e842fdce8a4de50c386f374b3ace04758c8 israel <israel@israel-VirtualBox.(none)> 1352434734 -0600	am: ENGR00144060 MX53_SMD: recovery android, update recovery command for emmc.
+00c94e842fdce8a4de50c386f374b3ace04758c8 cfa745215dbcdbaaec3f4b5483fc1d36ff7cdd80 israel <israel@israel-VirtualBox.(none)> 1352434734 -0600	am: ENGR00144389 mx53 QS Ripley: change VCC from 1.35V to 1.3V QS Ripley board
+cfa745215dbcdbaaec3f4b5483fc1d36ff7cdd80 7366b3a53a80c65273dfba39cdf2c5227d06c47f israel <israel@israel-VirtualBox.(none)> 1352434735 -0600	am: ENGR00144224: MX53: Add MMU mapping for all peripherals
+7366b3a53a80c65273dfba39cdf2c5227d06c47f e5f04d15df91e98952758b79b81ea18521e6fe5c israel <israel@israel-VirtualBox.(none)> 1352434735 -0600	am: ENGR00151187 MX53 SMD: Kernal stopped Usb driver after reseting in stop mode
+e5f04d15df91e98952758b79b81ea18521e6fe5c 08740379dcfe44e729a085c98198477113f4ccdc israel <israel@israel-VirtualBox.(none)> 1352434735 -0600	am: ENGR00151892 MX50: Workaround to prevent PLL1 from losing lock
+08740379dcfe44e729a085c98198477113f4ccdc 5048f67bd76aa2a6f519d2188f2183994caa61a0 israel <israel@israel-VirtualBox.(none)> 1352434736 -0600	am: ENGR00151966: MX51 - Apply SW workaround for the PLL1 unlock HW issue.
+5048f67bd76aa2a6f519d2188f2183994caa61a0 141c2a1e75733944196113e765fd8b9bcaf814b5 israel <israel@israel-VirtualBox.(none)> 1352434736 -0600	am: ENGR00144424 MX6: enable uboot for ARM2(SABREAUTO) CPU board
+141c2a1e75733944196113e765fd8b9bcaf814b5 ba07a439bdb56f28759cdb9be5bf53478c478717 israel <israel@israel-VirtualBox.(none)> 1352434736 -0600	am: ENGR00139198: iMX61 uBoot add ENET support
+ba07a439bdb56f28759cdb9be5bf53478c478717 ef68e798c2faeef76591985bba9212e0c2d34c17 israel <israel@israel-VirtualBox.(none)> 1352434736 -0600	am: ENGR00152241 MX6: enable 1G speed mode for PHY and ENET
+ef68e798c2faeef76591985bba9212e0c2d34c17 2631c74b28581fe3ccb2bac536e2f1b6097b0d40 israel <israel@israel-VirtualBox.(none)> 1352434737 -0600	am: ENGR00152439: MX51: PLL workaround should be implemented only for PLL1
+2631c74b28581fe3ccb2bac536e2f1b6097b0d40 42069bbcca3b278f8993e65414ab1343f9f69bd0 israel <israel@israel-VirtualBox.(none)> 1352434737 -0600	am: ENGR00139206 MX6 USDHC eMMC 4.4 support
+42069bbcca3b278f8993e65414ab1343f9f69bd0 75f933ed83effdee3e2f21c5fd33604465716fb2 israel <israel@israel-VirtualBox.(none)> 1352434737 -0600	am: ENGR00152755 MX6 Switch DRAM init script from plugin to DCD for emmc fastboot
+75f933ed83effdee3e2f21c5fd33604465716fb2 8109a83d92ff7e42b965d0ec13e3ebef36dd20f4 israel <israel@israel-VirtualBox.(none)> 1352434739 -0600	am: ENGR00152907 MX5X: update GPU default cmdline.
+8109a83d92ff7e42b965d0ec13e3ebef36dd20f4 dcbbd2c97b6c4ad76554b406411c4cc5e1d4cff9 israel <israel@israel-VirtualBox.(none)> 1352434739 -0600	am: ENGR00153394 mx50 rd3: make SDHC1 as default boot device for android
+dcbbd2c97b6c4ad76554b406411c4cc5e1d4cff9 9922a275adbfea707083315674499a7bf754ab18 israel <israel@israel-VirtualBox.(none)> 1352434741 -0600	am: ENGR00152843 mx51/3: align the android default env with document
+9922a275adbfea707083315674499a7bf754ab18 df5b812f77e519dce4d9f298c4a1472b8c8f4c1e israel <israel@israel-VirtualBox.(none)> 1352434741 -0600	am: ENGR00151695 mx53 ddr3: update ESDREF and MR0
+df5b812f77e519dce4d9f298c4a1472b8c8f4c1e dab88bd087bc5a0225a011713209fd0f37960087 israel <israel@israel-VirtualBox.(none)> 1352434741 -0600	am: ENGR00151310 mx53 smd: force warm reset as cold reset
+dab88bd087bc5a0225a011713209fd0f37960087 dcb77db6faf76aa67c273a6199f344e5e1dfc875 israel <israel@israel-VirtualBox.(none)> 1352434741 -0600	am: ENGR00143438 [MX50 RD3]DCDC_3V15 GPIO change
+dcb77db6faf76aa67c273a6199f344e5e1dfc875 ecca2479e98914b7e15d0f76c142189afab6159c israel <israel@israel-VirtualBox.(none)> 1352434741 -0600	am: ENGR00153597 [MX6]Enbale MMDC low power
+ecca2479e98914b7e15d0f76c142189afab6159c bee7ca96d11dc56dbbd35515fb2c73cc78cd04f8 israel <israel@israel-VirtualBox.(none)> 1352434742 -0600	am: ENGR00153605 fastboot: uboot cannot be burned to boot partition
+bee7ca96d11dc56dbbd35515fb2c73cc78cd04f8 ffea6151d2edce32e141fdc6fb413c2d8db3552c israel <israel@israel-VirtualBox.(none)> 1352434742 -0600	am: ENGR00153526 mx53 pcba: add pcba board revB support in uboot
+ffea6151d2edce32e141fdc6fb413c2d8db3552c 9445aa617cd2c7f8d2df7e8e3e9c2aadd86a01e8 israel <israel@israel-VirtualBox.(none)> 1352434742 -0600	am: ENGR00153759 mx51: fix fastboot build failed without boot partition macro
+9445aa617cd2c7f8d2df7e8e3e9c2aadd86a01e8 e05d32ffc9197c844c556a4fcc5419cde3ebcbfa israel <israel@israel-VirtualBox.(none)> 1352434742 -0600	am: ENGR00153761 imx6q ipuv3: improve display quality
+e05d32ffc9197c844c556a4fcc5419cde3ebcbfa 12667008a1ed4260ea14e3f06f17b32ff9478c94 israel <israel@israel-VirtualBox.(none)> 1352434743 -0600	am: ENGR00154400 mx53 pcba: bringup update for RevB board
+12667008a1ed4260ea14e3f06f17b32ff9478c94 aa9deff90aab0d86548fcad0c675a53417f0d8ef israel <israel@israel-VirtualBox.(none)> 1352434743 -0600	am: ENGR00154468 mx53 pcba: Add DC-IN power supply support for revB board
+aa9deff90aab0d86548fcad0c675a53417f0d8ef d89d31f217d5d76c1fb6d34c89ca62147f756a82 israel <israel@israel-VirtualBox.(none)> 1352434743 -0600	am: ENGR00154762 mx53_pcba: update Ripley/mc34708 USB/AUX charger settings
+d89d31f217d5d76c1fb6d34c89ca62147f756a82 9729181fa7a6bf7d4d5519a64d20dee7a79f0fa9 israel <israel@israel-VirtualBox.(none)> 1352434744 -0600	am: ENGR00154396: U_BOOT: Env config adjustment.
+9729181fa7a6bf7d4d5519a64d20dee7a79f0fa9 a0e113edc80204a082b59469d091437ad98e17b3 israel <israel@israel-VirtualBox.(none)> 1352434745 -0600	am: ENGR00154924 [MX6]Disable some clocks in uboot
+a0e113edc80204a082b59469d091437ad98e17b3 56a97a200ebd3f0d80d4fbf28c2e689c19d93cd7 israel <israel@israel-VirtualBox.(none)> 1352434745 -0600	am: ENGR00154998 mx53 pcba: correct the default bootargs
+56a97a200ebd3f0d80d4fbf28c2e689c19d93cd7 883fec514e384e3cf7c0bf5501f3b2753f593d61 israel <israel@israel-VirtualBox.(none)> 1352434745 -0600	am: ENGR00155018 mx53_pcba: update Ripley AUX input to 950mA and charge current
+883fec514e384e3cf7c0bf5501f3b2753f593d61 efb6b410a494813b3e45100e6579c835443ff29e israel <israel@israel-VirtualBox.(none)> 1352434745 -0600	am: ENGR00155138 mx53_smd/mx53_loco: Add i2c retry to fix DA9053 i2c NAK issue
+efb6b410a494813b3e45100e6579c835443ff29e 5658c38aea09f4cb986c7aa08349253ba49a7d06 israel <israel@israel-VirtualBox.(none)> 1352434746 -0600	am: ENGR00155156 [MX6]Clean up debug info in uboot
+5658c38aea09f4cb986c7aa08349253ba49a7d06 ca6a449f849f5195045ac3f22f415dfe65d35a74 israel <israel@israel-VirtualBox.(none)> 1352434746 -0600	am: ENGR00151255 mx53 QS: Enable VUSB_2V5
+ca6a449f849f5195045ac3f22f415dfe65d35a74 d2b7596f503ab16f289009c9b6b6d86b664e12dd israel <israel@israel-VirtualBox.(none)> 1352434747 -0600	am: ENGR00155133: Add sata support for imx6
+d2b7596f503ab16f289009c9b6b6d86b664e12dd 4587943392582511399c97d2c9116453d72c01a4 israel <israel@israel-VirtualBox.(none)> 1352434747 -0600	am: ENGR00155240 mx53_smd: Fix a bug that hangs on printf() in board_init
+4587943392582511399c97d2c9116453d72c01a4 e161f656b75bb921172cf720bbbe3377915f1c9d israel <israel@israel-VirtualBox.(none)> 1352434747 -0600	am: ENGR00154672: Change to use rom plugins for mx53 boards
+e161f656b75bb921172cf720bbbe3377915f1c9d 0e10463d7c52839d73da1310dda314da55647448 israel <israel@israel-VirtualBox.(none)> 1352434747 -0600	am: ENGR00155472 mx53_loco: support both of RevA and RevB in uboot
+0e10463d7c52839d73da1310dda314da55647448 82831177f6e1a0e543d053dde2c151a5a4d5f862 israel <israel@israel-VirtualBox.(none)> 1352434747 -0600	am: ENGR00155284 mx53_smd: move I2C access to board_init_late for system hang issue
+82831177f6e1a0e543d053dde2c151a5a4d5f862 4f03de2fb49a090ab532700a28dbe5bd58ea4918 israel <israel@israel-VirtualBox.(none)> 1352434747 -0600	am: ENGR00154666-1: Align u-boot mmc command with community
+4f03de2fb49a090ab532700a28dbe5bd58ea4918 45395b33868044b316a2297681aff60cce812803 israel <israel@israel-VirtualBox.(none)> 1352434748 -0600	am: ENGR00154666-2: Align u-boot mmc command with community
+45395b33868044b316a2297681aff60cce812803 2164873ffe13fde9076e27cac3c6d99ddaf488f2 israel <israel@israel-VirtualBox.(none)> 1352434749 -0600	am: ENGR00154666-3: Align u-boot mmc command with community
+2164873ffe13fde9076e27cac3c6d99ddaf488f2 398ca044de7caa3a824ae1d6e2d69c1d463026ba israel <israel@israel-VirtualBox.(none)> 1352434749 -0600	am: ENGR00154666-4: Align u-boot mmc command with community
+398ca044de7caa3a824ae1d6e2d69c1d463026ba ff7b5dbf50700ffa6e039b5dd363b1786b4d5dd2 israel <israel@israel-VirtualBox.(none)> 1352434749 -0600	am: ENGR00155739: mx53 evk mmu wrong mapped two csd slots
+ff7b5dbf50700ffa6e039b5dd363b1786b4d5dd2 3f888d93258e06c94c46fe8d900ae7b6163ce7a7 israel <israel@israel-VirtualBox.(none)> 1352434750 -0600	am: ENGR00155279: Change ESDCTL_0x82228080 to ESDCTL_0x82226080 for mx35
+3f888d93258e06c94c46fe8d900ae7b6163ce7a7 90cc4f864f7b7dbeadf45eb2ac91eb85dd6faff1 israel <israel@israel-VirtualBox.(none)> 1352434750 -0600	am: ENGR00155283: Set dpgdck0_2_en to 0 when freq is lower than 300MHz
+90cc4f864f7b7dbeadf45eb2ac91eb85dd6faff1 22dd183da0b87d793cb5c034e46f1179d3c38f3e israel <israel@israel-VirtualBox.(none)> 1352434751 -0600	am: ENGR00139254: Enable MX6Q Uboot Splash Screen
+22dd183da0b87d793cb5c034e46f1179d3c38f3e f81a2b7b9dbdf22458f3615e0eefa5ba28b7951c israel <israel@israel-VirtualBox.(none)> 1352434751 -0600	am: ENGR00156034: Fix mx53 evk build error
+f81a2b7b9dbdf22458f3615e0eefa5ba28b7951c 24f2373c1e4f79819d4ba75d4052ffeee74b72cb israel <israel@israel-VirtualBox.(none)> 1352434751 -0600	am: ENGR00156098 mx53_smd/mx53_loco: DA9053 I2C SDA stuck low issue on bootup
+24f2373c1e4f79819d4ba75d4052ffeee74b72cb e7f94a1594d1912a22929f7af32877168c4f7dbe israel <israel@israel-VirtualBox.(none)> 1352434752 -0600	am: ENGR00156304 eMMC: Need to update partition config after changing boot partition
+e7f94a1594d1912a22929f7af32877168c4f7dbe 1c61a47a82f89a8ee2e6a389037d22ebe71cda64 israel <israel@israel-VirtualBox.(none)> 1352434752 -0600	am: ENGR00156389: turn off child clocks before reconfigure perclk_root
+1c61a47a82f89a8ee2e6a389037d22ebe71cda64 fda0f4714f47ebb3dab00497e58b7047ad9817c0 israel <israel@israel-VirtualBox.(none)> 1352434752 -0600	am: ENGR00156405 ESDHC: Add workaround for auto-clock gate errata ENGcm03648
+fda0f4714f47ebb3dab00497e58b7047ad9817c0 2f975574f27130796542a13b2708812fb05cd276 israel <israel@israel-VirtualBox.(none)> 1352434752 -0600	am: ENGR00156670-1 ESDHC/USDHC: Remove delay before each cmd and some bug fixes
+2f975574f27130796542a13b2708812fb05cd276 c8794398ce9fc21ce8503456ed21aaec9cb80de7 israel <israel@israel-VirtualBox.(none)> 1352434752 -0600	am: ENGR00156670-2 MMC: Fixed some bugs in common code
+c8794398ce9fc21ce8503456ed21aaec9cb80de7 15d33a780ee59ba408924d0bfec6efa1da8dcaf5 israel <israel@israel-VirtualBox.(none)> 1352434752 -0600	am: ENGR00155569 mc34708: change global reset time as 4s of LOCO and PCBA
+15d33a780ee59ba408924d0bfec6efa1da8dcaf5 ce588e6551555073f979c4e5d351287ac6ac021d israel <israel@israel-VirtualBox.(none)> 1352434755 -0600	am: ENGR00157468: Fix default environment's "mmc dev" type error
+ce588e6551555073f979c4e5d351287ac6ac021d 0f7f71bd5e9f46929c671436fa1b0d3e396613f2 israel <israel@israel-VirtualBox.(none)> 1352434755 -0600	am: ENGR00157538 remove VDIG_PLL setting in plug-in code

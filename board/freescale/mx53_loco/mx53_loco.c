@@ -228,6 +228,12 @@ void board_mmu_init(void)
 	X_ARM_MMU_SECTION(0xF80, 0xF80, 0x080,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* iRam + GPU3D + Reserved */
+	X_ARM_MMU_SECTION(0xF7F, 0x020, 0x001,
+			ARM_CACHEABLE, ARM_BUFFERABLE,
+			ARM_ACCESS_PERM_RW_RW); /* My section 1 */
+	X_ARM_MMU_SECTION(0xF7F, 0x050, 0x001,
+			ARM_CACHEABLE, ARM_UNBUFFERABLE,
+			ARM_ACCESS_PERM_RW_RW); /* My section 2 */
 
 	/* Workaround for arm errata #709718 */
 	/* Setup PRRR so device is always mapped to non-shared */

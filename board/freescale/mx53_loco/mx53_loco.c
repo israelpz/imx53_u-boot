@@ -229,6 +229,18 @@ void board_mmu_init(void)
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* iRam + GPU3D + Reserved */
 
+
+X_ARM_MMU_SECTION(0xB00, 0xff0, 0x1,
+                        ARM_CACHEABLE, ARM_BUFFERABLE,
+                        ARM_ACCESS_PERM_RO_RO);
+X_ARM_MMU_SECTION(0xB00, 0xff1, 0x1,
+                        ARM_CACHEABLE, ARM_BUFFERABLE,
+                        ARM_ACCESS_PERM_RW_RW);
+X_ARM_MMU_SECTION(0xB00, 0xff2, 0x1,
+                        ARM_CACHEABLE, ARM_BUFFERABLE,
+                        ARM_ACCESS_PERM_RW_RW);
+
+
 	/* Workaround for arm errata #709718 */
 	/* Setup PRRR so device is always mapped to non-shared */
 	asm volatile ("mrc p15, 0, %0, c10, c2, 0" : "=r"(i) : /*:*/);

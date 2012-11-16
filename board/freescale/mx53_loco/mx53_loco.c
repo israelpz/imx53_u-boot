@@ -222,12 +222,21 @@ void board_mmu_init(void)
 	X_ARM_MMU_SECTION(0xF00, 0xF00, 0x07F,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* CS1 EIM control*/
+	X_ARM_MMU_SECTION(0xF00, 0x0A0, 0x001,
+			ARM_UNCACHEABLE, ARM_CACHEABLE,
+			ARM_ACCESS_PERM_RW_RW); /* My new area */
+	X_ARM_MMU_SECTION(0xF00, 0x0B0, 0x001,
+			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
+			ARM_ACCESS_PERM_RO_RO); /* My new area */
 	X_ARM_MMU_SECTION(0xF7F, 0xF7F, 0x001,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* NAND Flash buffer */
 	X_ARM_MMU_SECTION(0xF80, 0xF80, 0x080,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* iRam + GPU3D + Reserved */
+
+
+
 
 	/* Workaround for arm errata #709718 */
 	/* Setup PRRR so device is always mapped to non-shared */

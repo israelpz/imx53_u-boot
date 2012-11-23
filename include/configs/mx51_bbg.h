@@ -26,6 +26,8 @@
 
 #include <asm/arch/mx51.h>
 
+#define CONFIG_SPLASH_SCREEN /* ViEs: Added for splash screen support enable */
+
  /* High Level Configuration Options */
 #define CONFIG_ARMV7		1	/* This is armv7 Cortex-A8 CPU core */
 

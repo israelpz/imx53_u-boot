@@ -225,6 +225,12 @@ void board_mmu_init(void)
 	X_ARM_MMU_SECTION(0xF7F, 0xF7F, 0x001,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* NAND Flash buffer */
+        X_ARM_MMU_SECTION(0xF7F, 0x000, 0x001,
+                        ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
+                        ARM_ACCESS_PERM_RW_RW); /* NAND Flash buffer 1 */
+        X_ARM_MMU_SECTION(0xF7F, 0x7FF, 0x001,
+                        ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
+                        ARM_ACCESS_PERM_RW_RW); /* NAND Flash buffer 2 */
 	X_ARM_MMU_SECTION(0xF80, 0xF80, 0x080,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* iRam + GPU3D + Reserved */

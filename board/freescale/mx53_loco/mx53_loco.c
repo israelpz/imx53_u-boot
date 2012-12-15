@@ -68,6 +68,48 @@
 #include <jffs2/load_kernel.h>
 #endif
 
+/* MX53 LOCO GPIO PIN configurations */
+#define NVDD_FAULT			(0*32 + 5)	/* GPIO1_5 */
+
+#define FEC_INT				(1*32 + 4)	/* GPIO_2_4 */
+#define HEADPHONE_DEC_B		(1*32 + 5)	/* GPIO_2_5 */
+#define MIC_DEC_B			(1*32 + 6)	/* GPIO_2_6 */
+#define USER_UI1			(1*32 + 14)	/* GPIO_2_14 */
+#define USER_UI2			(1*32 + 15)	/* GPIO_2_15 */
+#define MX53_nONKEY			(0*32 + 8)	/* GPIO_1_8 */
+
+#define SD3_CD				(2*32 + 11)	/* GPIO_3_11 */
+#define SD3_WP				(2*32 + 12)	/* GPIO_3_12 */
+#define DISP0_POWER_EN		(2*32 + 24)	/* GPIO_3_24 */
+#define DISP0_DET_INT		(2*32 + 31)	/* GPIO_3_31 */
+
+#define DISP0_RESET			(4*32 + 0)	/* GPIO_5_0 */
+
+#define CSI0_RTSB			(5*32 + 9)	/* GPIO_6_9 */
+#define CSI0_PWDN			(5*32 + 10)	/* GPIO_6_10 */
+#define ACCL_EN				(5*32 + 14)	/* GPIO_6_14 */
+#define ACCL_INT1_IN		(5*32 + 15)	/* GPIO_6_15 */
+#define ACCL_INT2_IN		(5*32 + 16)	/* GPIO_6_16 */
+
+#define LCD_BLT_EN			(6*32 + 2)	/* GPIO_7_2 */
+#define FEC_RST				(6*32 + 6)	/* GPIO_7_6 */
+#define USER_LED_EN			(6*32 + 7)	/* GPIO_7_7 */
+#define USB_PWREN			(6*32 + 8)	/* GPIO_7_8 */
+#define NIRQ				(6*32 + 11)	/* GPIO7_11 */
+#define MX53_LOCO_MC34708_IRQ_REVA    (4*32 + 30)	/* GPIO5_30 */
+#define MX53_LOCO_MC34708_IRQ_REVB    (4*32 + 23)	/* GPIO5_23 */
+
+#define MX53_OFFSET					(0x20000000)
+#define TZIC_WAKEUP0_OFFSET         (0x0E00)
+#define TZIC_WAKEUP1_OFFSET         (0x0E04)
+#define TZIC_WAKEUP2_OFFSET         (0x0E08)
+#define TZIC_WAKEUP3_OFFSET         (0x0E0C)
+#define GPIO7_0_11_IRQ_BIT			(0x1<<11)
+
+extern void pm_i2c_init(u32 base_addr);
+static u32 mx53_loco_mc34708_irq;
+
+
 DECLARE_GLOBAL_DATA_PTR;
 
 static u32 system_rev;
@@ -742,19 +784,28 @@ void enable_pwm0_pad(void)
 {
 	unsigned int reg;
 
+printf("Si se configura...\n");
+
 	/* Enable the pin as GPIO GPIO_1  */	
 	mxc_request_iomux(MX53_PIN_GPIO_1, IOMUX_CONFIG_ALT1);
 	/* Set the DISP0_CONTRAST as output */
 	reg = readl(GPIO1_BASE_ADDR + 0x4);
-	reg |= 0x00000002;
+	reg |= 0x00000003;
 	writel(reg, GPIO1_BASE_ADDR + 0x4);
 
 	/* Enable the pin as GPIO PATA_INTRQ */	
 	mxc_request_iomux(MX53_PIN_ATA_INTRQ, IOMUX_CONFIG_ALT1);
 	/* Set the DISP0_CONTRAST as output */
 	reg = readl(GPIO7_BASE_ADDR + 0x4);
-	reg |= 0x00000004;
+	reg &= ~0x00000004;
 	writel(reg, GPIO7_BASE_ADDR + 0x4);
+
+	/* Enable the pin as GPIO3_24 */	
+	mxc_request_iomux(MX53_PIN_GPIO_3, IOMUX_CONFIG_ALT1);
+	/* Set the DISP0_CONTRAST as output */
+	reg = readl(GPIO3_BASE_ADDR + 0x4);
+	reg |= 0x01000000;
+	writel(reg, GPIO3_BASE_ADDR + 0x4);
 
 
 }
@@ -778,6 +829,12 @@ void disable_pwm0_pad(void)
 	reg &= ~0x00000004;
 	writel(reg, GPIO7_BASE_ADDR + 0x4);
 
+	/* Enable the pin as GPIO3_24 */	
+	mxc_request_iomux(MX53_PIN_GPIO_3, IOMUX_CONFIG_ALT1);
+	/* Set the DISP0_CONTRAST as output */
+	reg = readl(GPIO3_BASE_ADDR + 0x4);
+	reg &= ~0x01000000;
+	writel(reg, GPIO3_BASE_ADDR + 0x4);
 
 }
 
@@ -812,16 +869,22 @@ void lcd_enable(void)
 		/*Dummy functions*/
 		pwm0.enable_pwm_clk = enable_pwm0_clk;
 		pwm0.disable_pwm_clk = disable_pwm0_clk;
+		enable_pwm0_pad();
 
 		/*Turn On the DISP0_CONTRAST*/
 		reg = readl(GPIO1_BASE_ADDR + 0x0);
-		reg |= 0x00000002;
+		reg |= 0x00000003;
 		writel(reg, GPIO1_BASE_ADDR + 0x0);
 
 		/*Turn On the PATA_INTRQ*/
 		reg = readl(GPIO7_BASE_ADDR + 0x0);
 		reg |= 0x00000004;
 		writel(reg, GPIO7_BASE_ADDR + 0x0);
+
+		reg = readl(GPIO3_BASE_ADDR + 0x0);
+		reg |= 0x01000000;
+		writel(reg, GPIO3_BASE_ADDR + 0x0);
+
 
 	ret = ipuv3_fb_init(&lvds_xga, di, IPU_PIX_FMT_RGB666,
 			DI_PCLK_LDB, 65000000);

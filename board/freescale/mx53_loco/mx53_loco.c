@@ -914,6 +914,17 @@ int board_init(void)
     val |= 0x04;
     writel(val, GPIO7_BASE_ADDR + 0x4);
 
+    mxc_request_iomux(MX53_PIN_EIM_D24, IOMUX_CONFIG_ALT1);
+    /*Set pin as high*/
+    int val1 = readl(GPIO3_BASE_ADDR + 0x3);
+    val1 |= 0x01;
+    writel(val, GPIO3_BASE_ADDR + 0x3);
+    /* Set pin direction as output*/
+    val1 = readl(GPIO3_BASE_ADDR + 0x7);
+    val1 |= 0x01;
+    writel(val, GPIO3_BASE_ADDR + 0x7);
+
+
    /*Turn on the backlight END*/
 
     return 0;

@@ -290,6 +290,20 @@ void board_mmu_init(void)
         //Configure the pin 7.2 as output
 	val |= 0x04;
 	writel(val, GPIO7_BASE_ADDR + 0x4);
+
+	//Get the control of the pin GPIO7.2 "PATA_INTRQ"
+ 	mxc_request_iomux(MX53_PIN_EIM_D24, IOMUX_CONFIG_ALT1);
+	// Get tge current  status of the port GPIO3_3
+	val = readl(GPIO3_BASE_ADDR + 0x3);
+        //Make the pin 7.2  in high
+	val |= 0x01;
+	//Write the value 
+	writel(val, GPIO3_BASE_ADDR + 0x3);
+	//  Read the configuration of the GPIO3_3
+	val = readl(GPIO3_BASE_ADDR + 0x7);
+        //Configure the pin 7.2 as output
+	val |= 0x01;
+	writel(val, GPIO3_BASE_ADDR + 0x7);
         //Enjoy =)
 
 

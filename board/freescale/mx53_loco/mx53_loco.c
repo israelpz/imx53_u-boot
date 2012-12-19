@@ -26,6 +26,14 @@
 #include <asm/arch/mx53_pins.h>
 #include <asm/arch/iomux.h>
 #include <asm/errno.h>
+#if defined(CONFIG_VIDEO_MX5)
+#include <asm/imx_pwm.h>
+#include <linux/list.h>
+#include <linux/fb.h>
+#include <linux/mxcfb.h>
+#include <ipu.h>
+#include <lcd.h>
+#endif
 #include <netdev.h>
 
 #if CONFIG_I2C_MXC
@@ -64,6 +72,46 @@ DECLARE_GLOBAL_DATA_PTR;
 
 static u32 system_rev;
 static enum boot_device boot_dev;
+
+#ifdef CONFIG_VIDEO_MX5
+extern unsigned char fsl_bmp_600x400[];
+extern int fsl_bmp_600x400_size;
+extern int g_ipu_hw_rev;
+
+#if defined(CONFIG_BMP_8BPP)
+unsigned short colormap[256];
+#elif defined(CONFIG_BMP_16BPP)
+unsigned short colormap[65536];
+#else
+unsigned short colormap[16777216];
+#endif
+
+struct pwm_device pwm0 = {
+	.pwm_id = 0,
+	.pwmo_invert = 1,
+};
+
+struct pwm_device pwm1 = {
+	.pwm_id = 1,
+	.pwmo_invert = 1,
+};
+
+static int di = 1;
+
+extern int ipuv3_fb_init(struct fb_videomode *mode, int di,
+			int interface_pix_fmt,
+			ipu_di_clk_parent_t di_clk_parent,
+			int di_clk_val);
+
+static struct fb_videomode lvds_xga = {
+	 "XGA", 60, 1024, 768, 15385, 220, 40, 21, 7, 60, 10,
+	 FB_SYNC_EXT,
+	 FB_VMODE_NONINTERLACED,
+	 0,
+};
+
+vidinfo_t panel_info;
+#endif
 
 u32 get_board_rev_from_fuse(void)
 {
@@ -225,6 +273,12 @@ void board_mmu_init(void)
 	X_ARM_MMU_SECTION(0xF7F, 0xF7F, 0x001,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* NAND Flash buffer */
+	X_ARM_MMU_SECTION(0xF7F, 0x050, 0x001,
+			ARM_CACHEABLE, ARM_BUFFERABLE,
+			ARM_ACCESS_PERM_RW_NONE); /* NAND Flash buffer */
+	X_ARM_MMU_SECTION(0xF7F, 0x080, 0x001,
+			ARM_UNCACHEABLE, ARM_BUFFERABLE,
+			ARM_ACCESS_PERM_RW_RO); /* NAND Flash buffer */
 	X_ARM_MMU_SECTION(0xF80, 0xF80, 0x080,
 			ARM_UNCACHEABLE, ARM_UNBUFFERABLE,
 			ARM_ACCESS_PERM_RW_RW); /* iRam + GPU3D + Reserved */
@@ -647,6 +701,174 @@ int board_mmc_init(bd_t *bis)
 
 #endif
 
+#ifdef CONFIG_LCD
+void enable_pwm1_pad(void)
+{
+	mxc_request_iomux(MX53_PIN_DISP0_DAT9, IOMUX_CONFIG_ALT2);
+}
+
+void disable_pwm1_pad(void)
+{
+	unsigned int reg;
+
+	mxc_request_iomux(MX53_PIN_DISP0_DAT9, IOMUX_CONFIG_ALT1);
+	reg = readl(GPIO4_BASE_ADDR + 0x4);
+	reg |= 0x40000000;
+	writel(reg, GPIO4_BASE_ADDR + 0x4);
+	reg = readl(GPIO4_BASE_ADDR + 0x0);
+	reg |= 0x40000000;
+	writel(reg, GPIO4_BASE_ADDR + 0x0);
+}
+
+void enable_pwm1_clk(void)
+{
+	unsigned int reg;
+
+	reg = readl(CCM_BASE_ADDR + CLKCTL_CCGR2);
+	reg |= 0x30000;
+	writel(reg, CCM_BASE_ADDR + CLKCTL_CCGR2);
+}
+
+void disable_pwm1_clk(void)
+{
+	unsigned int reg;
+
+	reg = readl(CCM_BASE_ADDR + CLKCTL_CCGR2);
+	reg &= ~0x30000;
+	writel(reg, CCM_BASE_ADDR + CLKCTL_CCGR2);
+}
+
+void enable_pwm0_pad(void)
+{
+	unsigned int reg; 
+
+	mxc_request_iomux(MX53_PIN_GPIO_1, IOMUX_CONFIG_ALT1); 
+	mxc_request_iomux(MX53_PIN_ATA_INTRQ, IOMUX_CONFIG_ALT1); 
+
+	reg = readl(GPIO1_BASE_ADDR + 0x4); 
+	reg |= 0x00000002; 
+	writel(reg, GPIO1_BASE_ADDR + 0x4); 
+	
+	reg = readl(GPIO7_BASE_ADDR + 0x4); 
+	reg |= 0x00000004; 
+	writel(reg, GPIO7_BASE_ADDR + 0x4); 
+}
+
+void disable_pwm0_pad(void)
+{
+	unsigned int reg;
+
+	mxc_request_iomux(MX53_PIN_GPIO_1, IOMUX_CONFIG_ALT1); 
+	mxc_request_iomux(MX53_PIN_ATA_INTRQ, IOMUX_CONFIG_ALT1); 
+
+	reg = readl(GPIO1_BASE_ADDR + 0x4); 
+	reg |= 0x00000002; 
+	writel(reg, GPIO1_BASE_ADDR + 0x4); 
+
+	reg = readl(GPIO7_BASE_ADDR + 0x4); 
+	reg |= 0x00000004; 
+	writel(reg, GPIO7_BASE_ADDR + 0x4); 
+}
+
+void enable_pwm0_clk(void)
+{
+	unsigned int reg;
+
+	reg = readl(CCM_BASE_ADDR + CLKCTL_CCGR2);
+	reg |= 0x3000;
+	writel(reg, CCM_BASE_ADDR + CLKCTL_CCGR2);
+}
+
+void disable_pwm0_clk(void)
+{
+	unsigned int reg;
+
+	reg = readl(CCM_BASE_ADDR + CLKCTL_CCGR2);
+	reg &= ~0x3000;
+	writel(reg, CCM_BASE_ADDR + CLKCTL_CCGR2);
+}
+
+void lcd_enable(void)
+{
+	char *s;
+	int ret;
+	unsigned int reg;
+
+	s = getenv("lvds_num");
+	di = simple_strtol(s, NULL, 10);
+
+	/*
+	* hw_rev 2: IPUV3DEX
+	* hw_rev 3: IPUV3M
+	* hw_rev 4: IPUV3H
+	*/
+	g_ipu_hw_rev = IPUV3_HW_REV_IPUV3M;
+
+	/* 200Hz PWM wave, 50% duty */
+	pwm0.enable_pwm_pad = enable_pwm0_pad;
+	pwm0.disable_pwm_pad = disable_pwm0_pad;
+	pwm0.enable_pwm_clk = enable_pwm0_clk;
+	pwm0.disable_pwm_clk = disable_pwm0_clk;
+	
+	enable_pwm0_pad();
+	
+	reg = readl(GPIO1_BASE_ADDR + 0x0); 
+	reg |= 0x00000002; 
+	writel(reg, GPIO1_BASE_ADDR + 0x0); 
+
+	reg = readl(GPIO7_BASE_ADDR + 0x0); 
+	reg |= 0x00000004; 
+	writel(reg, GPIO7_BASE_ADDR + 0x0); 
+
+
+	ret = ipuv3_fb_init(&lvds_xga, di, IPU_PIX_FMT_RGB666,
+			DI_PCLK_LDB, 65000000);
+	if (ret)
+		puts("LCD cannot be configured\n");
+
+	reg = readl(CCM_BASE_ADDR + CLKCTL_CSCMR2);
+	reg &= ~0xFC000000;
+	reg |= 0xB4000F00;
+	writel(reg, CCM_BASE_ADDR + CLKCTL_CSCMR2);
+
+	reg = readl(CCM_BASE_ADDR + CLKCTL_CCGR6);
+	reg |= 0xF0000000;
+	writel(reg, CCM_BASE_ADDR + CLKCTL_CCGR6);
+
+	writel(0x201, IOMUXC_BASE_ADDR + 0x8);
+}
+#endif
+
+#ifdef CONFIG_VIDEO_MX5
+void panel_info_init(void)
+{
+	panel_info.vl_bpix = LCD_BPP;
+	panel_info.vl_col = lvds_xga.xres;
+	panel_info.vl_row = lvds_xga.yres;
+	panel_info.cmap = colormap;
+}
+#endif
+
+#ifdef CONFIG_SPLASH_SCREEN
+void setup_splash_image(void)
+{
+	char *s;
+	ulong addr;
+
+	s = getenv("splashimage");
+
+	if (s != NULL) {
+		addr = simple_strtoul(s, NULL, 16);
+
+#if defined(CONFIG_ARCH_MMU)
+		addr = ioremap_nocache(iomem_to_phys(addr),
+				fsl_bmp_600x400_size);
+#endif
+		memcpy((char *)addr, (char *)fsl_bmp_600x400,
+				fsl_bmp_600x400_size);
+	}
+}
+#endif
 
 int board_init(void)
 {
@@ -686,6 +908,14 @@ int board_init(void)
 	setup_sata_device();
 #endif
 
+#ifdef CONFIG_VIDEO_MX5
+	panel_info_init();
+
+	gd->fb_base = CONFIG_FB_BASE;
+#ifdef CONFIG_ARCH_MMU
+	gd->fb_base = ioremap_nocache(iomem_to_phys(gd->fb_base), 0);
+#endif
+#endif
 	return 0;
 }
 
